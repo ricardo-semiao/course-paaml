@@ -1,8 +1,17 @@
-# Bem Vindo!
+# Educational Materials on Python
 
-Este é o repositório com os materiais que criei para o meu estudo da linguagem Python.
+<div style="display: flex;">
+<div style="flex: 50%; padding: 5px;">
 
-Tudo aqui é, em sua maior parte, autoral. Os materiais originalmente vieram de aulas que dei para os trainees da GVCode, a entidade de programação e ciência de dados da FGV-SP.
+Bem vindo! Este é o repositório com os materiais para o meu estudo da linguagem Python. Tudo aqui é, em sua maior parte, autoral. Os materiais originalmente vieram de aulas que dei para os trainees da GVCode, a entidade de programação e ciência de dados da FGV-SP.
+
+</div>
+<div style="flex: 50%; padding: 5px;">
+
+Welcome! This is the repository with the educational materials for my own Python study. All that lives here is, majorly, authorial. The materials came from classes I gave for the trainees at GVCode, the data science and programming student organization from FGV-SP. The texts are in portuguese, with no current intention on translating them.
+
+</div>
+</div>
 
 Note alguns pontos importantes:
 
@@ -58,6 +67,8 @@ Note alguns pontos importantes:
 12. **Modelling.**
 - Com sktlearn.
 
-13. **Outros tópicos.**
+13. **Web scrapping**
+
+14. **Outros tópicos.**
 - Guia de estilo e boas práticas.
 - Debugging com vscode.
