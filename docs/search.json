@@ -1,0 +1,590 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Python: Automação, Apps, e Machine Learning",
+    "section": "",
+    "text": "Ricardo Semião e Castro\n            July 5, 2025\n        \n        \n\nBem Vindo!\nEste livro contém meus estudos sobre Python. Ele existe no contexto dos meus outros materiais, “Ciência da Computação: Introdução e Aplicações” e “R: Fundamentos e Ciência de Dados”. Em cada linguagem, dou o foco em (i) o seu forte em aplicações, e (ii) seus conceitos da CC mais relevantes. No caso do Python, foco em explicar suas características como uma linguagem orientada ao objeto, suas aplicações em machine learning, e suas aplicações mais generalistas.",
+    "crumbs": [
+      "Bem Vindo!"
+    ]
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introdução",
+    "section": "",
+    "text": "1.1 Parte 1: Introdução à Linguagem\nA organização deste livro é descrita abaixo.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#parte-1-introdução-à-linguagem",
+    "href": "intro.html#parte-1-introdução-à-linguagem",
+    "title": "1  Introdução",
+    "section": "",
+    "text": "Introdução ao Python\nProgramação Orientada a Objeto\nSintaxe e Variáveis\nTipos de Valores e Coleções\nControl Flow e Condições\nSubsetting\nFunções e Ambientes\nOutros Tópicos",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#parte-2-machine-learning",
+    "href": "intro.html#parte-2-machine-learning",
+    "title": "1  Introdução",
+    "section": "1.2 Parte 2: Machine Learning",
+    "text": "1.2 Parte 2: Machine Learning\n\nMachine Learning Teórica\nManipulação e Visualização de Dados\nShallow Learning\nDeep Learning",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#parte-3-automação",
+    "href": "intro.html#parte-3-automação",
+    "title": "1  Introdução",
+    "section": "1.3 Parte 3: Automação",
+    "text": "1.3 Parte 3: Automação\n\nOverview\nWeb Scrapping\nOutros Tópicos",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span>"
+    ]
+  },
+  {
+    "objectID": "intro.html#parte-4-aplicações",
+    "href": "intro.html#parte-4-aplicações",
+    "title": "1  Introdução",
+    "section": "1.4 Parte 4: Aplicações",
+    "text": "1.4 Parte 4: Aplicações\n\nOverview\nJango\nShiny\nOutros",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introdução</span>"
+    ]
+  },
+  {
+    "objectID": "1-intro_python.html",
+    "href": "1-intro_python.html",
+    "title": "2  1. Introdução",
+    "section": "",
+    "text": "2.1 História\nSeja bem vindo à introdução deste material sobre Python. Note alguns pontos importantes:\n[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1. Introdução</span>"
+    ]
+  },
+  {
+    "objectID": "1-intro_python.html#características-da-linguagem-e-porque-python",
+    "href": "1-intro_python.html#características-da-linguagem-e-porque-python",
+    "title": "2  1. Introdução",
+    "section": "2.2 Características da Linguagem, e “Porque Python?”",
+    "text": "2.2 Características da Linguagem, e “Porque Python?”\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1. Introdução</span>"
+    ]
+  },
+  {
+    "objectID": "1-intro_python.html#literatura-sobre-python",
+    "href": "1-intro_python.html#literatura-sobre-python",
+    "title": "2  1. Introdução",
+    "section": "2.3 Literatura sobre Python",
+    "text": "2.3 Literatura sobre Python\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1. Introdução</span>"
+    ]
+  },
+  {
+    "objectID": "1-intro_python.html#instalação-interface-e-ferramentas",
+    "href": "1-intro_python.html#instalação-interface-e-ferramentas",
+    "title": "2  1. Introdução",
+    "section": "2.4 Instalação, Interface, e Ferramentas",
+    "text": "2.4 Instalação, Interface, e Ferramentas\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>1. Introdução</span>"
+    ]
+  },
+  {
+    "objectID": "1-oop.html",
+    "href": "1-oop.html",
+    "title": "3  Programação Orientada a Objeto",
+    "section": "",
+    "text": "[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]\n\n3.0.1 Classes, objetos, e métodos\nAs classes são compostas de\n\nAtributos ou Propriedades (Attributes ou Properties): São dados ou estados característicos daquela classe. Por exemplo, a classe “ações” pode ser modelada como tendo um preço médio, um volume diário, e um ticker.\nMétodos: São as funções que são específicos daquela classe, muitas vezes utilizam os próprios atributos da classe para realizar uma operação. Por exemplo, pode-se criar um método na classe “ações” que mutliplique o preço médio pelo volume diário para se obter o volume financeiro médio.\n\nMas então, o que são os objetos?\n\nClasse (class), estrutura de dados / procedimentos / funções que podem se repetir no programa, e;\nObjeto (object), instâncias (exemplos específicos) das classes.\n\nQualquer estrutura que possua múltiplas instâncias pode ser caracterizada como uma classe (class), e qualquer instância/exemplo dessa estrutura pode ser um objeto (object).\n\n\n3.0.2 Criando classes e objetos\nUsamos a palavra class, o nome da classe (com a primeira letra em maísculo, por convenção), e “()”, indicando uma ação (no caso, criar um objeto da classe).\nNormalmente a definição de uma classe começa pelo método init. ele é um método especial, o método construtor, e indica que todas as linhas subordinadas a ele devem ser executadas quando um objeto daquela classe é criado. As linhas que estão subordinadas ao método init são aquelas que estabelecem os atributos.\nAlém disso, a palavra self é uma referência a todos os atributos de um objeto. Os métodos levam como argumento o próprio objeto em si, ou seja, o método que tem self como argumento pode acessar e trabalhar com todos os elementos do objeto em si.\nDepois do método construtor (init), em geral, vêm os métodos ordinários, aqueles que executam ações.\n\nclass aluno():\n  #criando atributos\n    def __init__(self,nome,nota1,nota2):\n        self.nome = nome\n        self.nota1 = nota1\n        self.nota2 = nota2\n  #criando funções\n    def media(self):\n        return (self.nota1 + self.nota2) / 2\na = [1, 2, 3, ...]\n\n\nmichel = aluno(nome = \"Michel\", nota1 = 7, nota2 = 10)\nprint(michel.nome,michel.media())\n\n\nclass Stocks():\n    def __init__(self, ticker_name, price_inDolars, volume_inUnits, beta_float,\n                 divDate_string, enterpriseValue_inDolars, price_inList):\n        self.ticker = ticker_name # preenchendo name com o valor referente ao argumento full_name\n        self.price_last = price_inDolars\n        self.volume_last_day = volume_inUnits\n        self.beta = beta_float\n        self.divDate = divDate_string\n        self.enterpriseValue = enterpriseValue_inDolars\n        self.price_hist = price_inList\n        self.portShare = 0# não vem de argumento, sempre uma ação começa com esse valor de argumento\n\n    def eatfinVolume(self): # self entra como argumento para que o procedimento possa acessar os atributos e seus valores.\n        return self.price_last * self.volume_last_day\n\n    def addPrice(self, price):\n        self.price_hist.append(price)\n\n    def changeShare(self, newshare):\n        self.portShare = newshare\n\n    def printPrice(self):\n        print(\"The stock \" + self.ticker + \" has a last price of \" + str(self.price_last))\n\n    def __str__(self):\n        return \"The stock \" + str(self.ticker) + \" has a last price of \" + str(self.price_last)\n\n\npetr = Stocks(ticker_name = \"PETR4.SA\",\n              price_inDolars = 30.13,\n              volume_inUnits = 93824145,\n              beta_float = 1.33,\n              divDate_string = \"Aug 12, 2022\",\n              enterpriseValue_inDolars = 594060000000,\n              price_inList = [29.80, 30.39, 29.44])\n\nprint(petr.ticker)\n\npetr.eatfinVolume()\n\npetr.printPrice()\n\npetr.price_last = 31.23\nprint(petr.price_last)\n\npetr.nationality = \"Brazil\"\nprint(petr.nationality)\n\nprint(petr)",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Programação Orientada a Objeto</span>"
+    ]
+  },
+  {
+    "objectID": "1-sintax_variables.html",
+    "href": "1-sintax_variables.html",
+    "title": "4  Sintaxe e Variáveis",
+    "section": "",
+    "text": "4.1 Sintaxe\n[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]\nEm termos simplistas, um script é um arquivo de texto com instruções a serem executadas por um computador que antes traduzirá o arquivo para linguagem de máquina.\nUm script é um texto instrucional como qualquer outro, escrito em um tipo de linguagem especial, “de programação”, ou “código”, mas é um texto. Pode similar à receita de bolo de cenoura da minha vó, ou o roteiro da peça escolar onde interpretei, com maestria, a árvore #3.\nComo em qualquer linguagem, temos um vocabulário à disposição, um conjunto de palavras (ou tokens) existentes, organizadas em categorias como substantivos, adjetivos, etc. Nós combinamos as palavras em frases (ou statements) para descrever as instruções. Por fim, organizamos o texto em parágrafos (ou blocks), conjuntos de frases que devem ser lidas juntas, para definir a estrutura e facilitar o entendimento do texto.\nOk, a receita da minha vó não tinha parágrafos, a metáfora não é perfeita, paciência.\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sintaxe e Variáveis</span>"
+    ]
+  },
+  {
+    "objectID": "1-sintax_variables.html#variáveis",
+    "href": "1-sintax_variables.html#variáveis",
+    "title": "4  Sintaxe e Variáveis",
+    "section": "4.2 Variáveis",
+    "text": "4.2 Variáveis\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sintaxe e Variáveis</span>"
+    ]
+  },
+  {
+    "objectID": "1-sintax_variables.html#operadores",
+    "href": "1-sintax_variables.html#operadores",
+    "title": "4  Sintaxe e Variáveis",
+    "section": "4.3 Operadores",
+    "text": "4.3 Operadores\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sintaxe e Variáveis</span>"
+    ]
+  },
+  {
+    "objectID": "1-data_collections.html",
+    "href": "1-data_collections.html",
+    "title": "5  Tipos de Valores e Coleções",
+    "section": "",
+    "text": "5.1 Tipos de Dados\n[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Tipos de Valores e Coleções</span>"
+    ]
+  },
+  {
+    "objectID": "1-data_collections.html#coleções",
+    "href": "1-data_collections.html#coleções",
+    "title": "5  Tipos de Valores e Coleções",
+    "section": "5.2 Coleções",
+    "text": "5.2 Coleções\nO nome coleções vem de “conjunto” de dados, e existem quatro tipos diferentes, que servem para objetivos diferentes, baseados em suas características:\n\n\n\n\nOrdenado\nMutável\nDuplicatas\n\n\n\n\nListas\nsim\nsim\nsim\n\n\nTuples\nsim\nnão\nsim\n\n\nSets\nnão\nnão\nnão\n\n\nDicionários\nsim\nsim\nnão\n\n\n\nEm termos mais simples listas são as mais flexíveis e menos específicas, tuples são listas imutáveis, e dicionários são listas nomeadas. Sets, os mais restritivos, funcionam como o conceito de “conjunto” da matemática.\nCada coleção tem seus próprios métodos, dêem uma olhada neles nos tutoriais abaixo:\n\nW3Schools: https://www.w3schools.com/python/python_lists.asp (mais simples e sucinto);\nDocumentação do Python: https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences (mais técnico, mais informações).",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Tipos de Valores e Coleções</span>"
+    ]
+  },
+  {
+    "objectID": "1-data_collections.html#arrays-e-o-numpy",
+    "href": "1-data_collections.html#arrays-e-o-numpy",
+    "title": "5  Tipos de Valores e Coleções",
+    "section": "5.3 Arrays e o Numpy",
+    "text": "5.3 Arrays e o Numpy\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Tipos de Valores e Coleções</span>"
+    ]
+  },
+  {
+    "objectID": "1-data_collections.html#data-frames-e-o-pandas",
+    "href": "1-data_collections.html#data-frames-e-o-pandas",
+    "title": "5  Tipos de Valores e Coleções",
+    "section": "5.4 Data frames e o Pandas",
+    "text": "5.4 Data frames e o Pandas\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Tipos de Valores e Coleções</span>"
+    ]
+  },
+  {
+    "objectID": "1-control_conds.html",
+    "href": "1-control_conds.html",
+    "title": "6  Control Flow e Condições",
+    "section": "",
+    "text": "6.1 If e Else\n[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Control Flow e Condições</span>"
+    ]
+  },
+  {
+    "objectID": "1-control_conds.html#while-e-for",
+    "href": "1-control_conds.html#while-e-for",
+    "title": "6  Control Flow e Condições",
+    "section": "6.2 While e For",
+    "text": "6.2 While e For\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Control Flow e Condições</span>"
+    ]
+  },
+  {
+    "objectID": "1-control_conds.html#keywords",
+    "href": "1-control_conds.html#keywords",
+    "title": "6  Control Flow e Condições",
+    "section": "6.3 Keywords",
+    "text": "6.3 Keywords\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Control Flow e Condições</span>"
+    ]
+  },
+  {
+    "objectID": "1-control_conds.html#comprehension-de-coleções",
+    "href": "1-control_conds.html#comprehension-de-coleções",
+    "title": "6  Control Flow e Condições",
+    "section": "6.4 Comprehension de Coleções",
+    "text": "6.4 Comprehension de Coleções\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Control Flow e Condições</span>"
+    ]
+  },
+  {
+    "objectID": "1-control_conds.html#error-handling",
+    "href": "1-control_conds.html#error-handling",
+    "title": "6  Control Flow e Condições",
+    "section": "6.5 Error Handling",
+    "text": "6.5 Error Handling\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Control Flow e Condições</span>"
+    ]
+  },
+  {
+    "objectID": "1-subset.html",
+    "href": "1-subset.html",
+    "title": "7  Subsetting",
+    "section": "",
+    "text": "7.1 Subset de Coleções Básicas\n[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Subsetting</span>"
+    ]
+  },
+  {
+    "objectID": "1-subset.html#subset-de-arrays",
+    "href": "1-subset.html#subset-de-arrays",
+    "title": "7  Subsetting",
+    "section": "7.2 Subset de Arrays",
+    "text": "7.2 Subset de Arrays\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Subsetting</span>"
+    ]
+  },
+  {
+    "objectID": "1-subset.html#subset-de-dataframes",
+    "href": "1-subset.html#subset-de-dataframes",
+    "title": "7  Subsetting",
+    "section": "7.3 Subset de Dataframes",
+    "text": "7.3 Subset de Dataframes\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Subsetting</span>"
+    ]
+  },
+  {
+    "objectID": "1-funs_envs.html",
+    "href": "1-funs_envs.html",
+    "title": "8  Funções e Ambientes",
+    "section": "",
+    "text": "8.1 Sintaxe e Argumentos\n[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Funções e Ambientes</span>"
+    ]
+  },
+  {
+    "objectID": "1-funs_envs.html#funções-lambda",
+    "href": "1-funs_envs.html#funções-lambda",
+    "title": "8  Funções e Ambientes",
+    "section": "8.2 Funções Lambda",
+    "text": "8.2 Funções Lambda\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Funções e Ambientes</span>"
+    ]
+  },
+  {
+    "objectID": "1-funs_envs.html#argumentos-extras",
+    "href": "1-funs_envs.html#argumentos-extras",
+    "title": "8  Funções e Ambientes",
+    "section": "8.3 Argumentos Extras",
+    "text": "8.3 Argumentos Extras\nO operador * e ** são operadores de “desempacotamento”. Transformam uma lista\n\nItem da lista\nItem da lista\n\nem vários argumentos “soltos”. Suponha que você tenha uma lista de argumentos que quer passar para uma função, no lugar de pegar cada elemento da lista individualmente, você pode usar *:\n\nargs = [1, 2, 3]\n\nprint(1, 2, 3) #resultado quisto\nprint(args[0], args[1], args[2]) #pior\nprint(*args) #melhor\n\nO operador ** é similar, mas transforma um dicionário em vários argumentos nomeados:\n\nargs = (1, 2, 3)\nkwargs = {'sep': '-', 'end': '!\\n'}\n\nprint(1, 2, 3, sep = '-', end = '!\\n') #resultado quisto\nprint(args[0], args[1], args[2], sep = kwargs['sep'], end = kwargs['end']) #pior\nprint(*args, **kwargs) #melhor\n\nTambém podemos fazer a operação inversa, criar uma função que receba um número desconhecido de argumentos (soltos/desempacotados). Podemos preceder qualquer nome de argumento com * ou **, e eles coletarão argumentos não utilizados, e os empacotarão em uma tuple e dicionário, respectivamente.\n\ndef f(a, *args):\n  print(args)\n\nprint(f(4, 1, 2, 3)) # a = 4 !!!\n\ndef g(a, **kwargs):\n  print(kwargs)\n\ng(4, um = 1, dois = 2, tres = 3)\n\nIsso é útil porque a partir disso, podemos utilizar esses argumetos com base nos métodos de dicionário e tuples. Ou, podemos desempacotar e passá-los diretamente à outras funções:\n\ndef my_sum(*args):\n    result = 0\n    for x in args:\n        result += x\n    print(result)\n\nmy_sum(1, 2, 3, 4, 5, 6)\n\ndef my_print(*args, **kwargs):\n  print(*args, **kwargs)\n\nmy_print('oi', 'olá', sep = ', ', end = '!')\n\n\ndef calcular_imc(*args, **kwargs):\n    resultados = []\n\n    for i, pessoa in enumerate(args):\n        peso = kwargs.get(f'peso{i}', None)\n        altura = kwargs.get(f'altura{i}', None)\n\n        if peso is None or altura is None:\n            print(f\"Faltam dados para a pessoa {i+1}. Peso e altura são necessários.\")\n            continue\n\n        if peso &lt;= 0 or altura &lt;= 0:\n            print(f\"Valores inválidos para a pessoa {i+1}. Peso e altura devem ser positivos.\")\n            continue\n\n        imc = peso / (altura ** 2)\n        resultados.append(imc)\n\n    return resultados\n\nimcs = calcular_imc(1,2,3, peso0=60, altura0=1.7, peso1=70, altura1=1.75, peso2=80, altura2=1.8)\nprint(imcs)",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Funções e Ambientes</span>"
+    ]
+  },
+  {
+    "objectID": "1-funs_envs.html#ambientes-e-busca-de-valores",
+    "href": "1-funs_envs.html#ambientes-e-busca-de-valores",
+    "title": "8  Funções e Ambientes",
+    "section": "8.4 Ambientes e Busca de Valores",
+    "text": "8.4 Ambientes e Busca de Valores\n[a fazer]\n\na = 1\nb = 2\nc = 3\nd = 4\n\ndef fun(a, **kargs):\n    b = 20\n    return [a, b, c, d]\n\nfun(a = 10, c = 30)\n\n\ndef fun(a, **kargs):\n    b = 20\n    return [a, b, c, d, e]\n\nfun(a = 10, c = 30)",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Funções e Ambientes</span>"
+    ]
+  },
+  {
+    "objectID": "1-funs_envs.html#generators-e-operators",
+    "href": "1-funs_envs.html#generators-e-operators",
+    "title": "8  Funções e Ambientes",
+    "section": "8.5 Generators e Operators",
+    "text": "8.5 Generators e Operators\n[a fazer]",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Funções e Ambientes</span>"
+    ]
+  },
+  {
+    "objectID": "1-others.html",
+    "href": "1-others.html",
+    "title": "9  Outros Tópicos",
+    "section": "",
+    "text": "9.1 Funções Base\n[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]\nReferência: https://docs.python.org/3/library/functions.html",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Outros Tópicos</span>"
+    ]
+  },
+  {
+    "objectID": "1-others.html#funções-base",
+    "href": "1-others.html#funções-base",
+    "title": "9  Outros Tópicos",
+    "section": "",
+    "text": "9.1.1 Funções relacionadas à tipos de variáveis\n\nbool(0), bool(1), bool(1811275162543)\n\n\nfloat(10), float(3.5), float('3.5')\n\n\nint('8'), int(10.7)\nstr(8)\n\n\ntype([1, 2])\n\n\n\n9.1.2 Funções sobre iteráveis\n\nmy_list = ['São Paulo', 'Flamengo']\n\n# o que é um iterável?\n\nenumerate(my_list), list(enumerate(my_list))\n#type(enumerate(my_list))\n\n\n#sem enumerate:\nindex = 0\nfor i in my_list:\n    print('Parabéns ' + i + '! Você ficou em ' + str(index + 1) + 'º lugar!')\n    index += 1\n\n\n#com enumerate:\nfor index, i in enumerate(my_list):\n    print('Parabéns ' + i + '! Você ficou em ' + str(index + 1) + 'º lugar!')\n\nprint(\"cof cof Copa do Brasil cof cof\")\n\n\ndef maior_que_dois(x):\n    return x &gt; 2\n#Ou utilizar uma função anônima \"lambda\": lambda x: x &gt; 2\n\nmy_list = [1,2,3,4]\nprint(list(filter(maior_que_dois, my_list)))\nprint(list(filter(lambda x: x&gt;2, my_list)))\n\n\nmy_map = list(map(maior_que_dois, my_list)) # map: aplicar uma função para todos os itens\nmy_map\n\n\nprint(my_list)\nprint(my_map)\n[my_list, my_map]\n\n[(my_list[i], my_map[i]) for i in range(4)]\nlist(zip(my_list, my_map))\n# zip(): une tuplas, mas é um objeto próprio\n# → precisa fazer tuple(zip()) para ver a tupla mesmo\n\n\n\n9.1.3 Funções sobre criação de variáveis\n\ndict(zip(my_list, my_map))\n\n\nlist()\n\n\nset([1,2,2,3,4])\n\n\ntuple(my_list)\n\n\ntype((1, 2))\n\n\n\n9.1.4 Outras funções\n\nformat() #formata strings (setá tratada na aula de REGEX)\n\n\nmy_list, repr(my_list), eval(repr(my_list)), eval('1+2')\n# eval(): avalia um string para ver se tem como fazer contas lá dentro → se der, devolve quanto que dá\n\n\ninput() #recebe algum valor do terminal\n\ninput(\"A aula tá legal? \")\n\n\n\n9.1.5 Funções matemáticas e lógicas\n\nabs() #módulo\ndivmod(número, divisor) #divisão (parte inteira, resto)\nmax()\nmin()\npow(base, expoente)\nround(número, digitos)\nsum()\nall([True, True, False]) # True se todos os argumentos são true\nany([True, True, False]) # True se pelo menos um argumento é verdadeiro\n\n\nabs(-3), abs(3)\n\n\ndivmod(7, 5)\n\n\nround(3.1263817241864518742612, 4)",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Outros Tópicos</span>"
+    ]
+  },
+  {
+    "objectID": "1-others.html#bibliotecas",
+    "href": "1-others.html#bibliotecas",
+    "title": "9  Outros Tópicos",
+    "section": "9.2 Bibliotecas",
+    "text": "9.2 Bibliotecas\nAgora partimos para funções externas\n\n9.2.1 Como instalar bibliotecas\nReferência: https://packaging.python.org/en/latest/tutorials/installing-packages/\nChecar instalação do python (digitar no terminal): &gt; py –version\nChecar instalação do pip, o instalador de pacotes: &gt; py -m pip –version\nInstalar o pacote pelo nome: &gt; py -m pip install nome_do_pacote\n\n\n9.2.2 Módulo math\nReferência: https://docs.python.org/3/library/math.html\n\nimport math\n\n\nround(math.pi, 3)\n\n\nmath.ceil()\nmath.floor()\nmath.trunc()\nmath.modf(5.256) #(0.2560000000000002, 5.0)\n\n\nmath.comb(k_items, n_opções) #n! / (k! * (n - k)!) ) (sem ordem, sem repetição)\nmath.perm(k_items, n_opções) #n! / (n - k)! (com ordem, sem repetição)\nmath.factorial(n)\n\n\nmath.gcd() #mdc\nmath.lcm() #mmc\n\n\n# abs(a-b) &lt;= max(rel_tol * max(abs(a), abs(b)), abs_tol)\n# rel_tol = tolerância relativa\n# abs_tol = tolerância absoluta\nprint(m.isclose(5, 10, rel_tol=0.49, abs_tol=0))\nprint(m.isclose(5, 10, rel_tol=0, abs_tol=5))\n\n\nmath.isfinite()\nmath.isinf()\n\n\n2**(0.5), math.sqrt(2)\n\n\nprint(math.dist((0,0), [1,1])) # distância euclidiana\nprint(math.hypot(1,1,1,1,1)) # norma euclidiana → distância da origem até o ponto\n\n\nmath.cos(), math.sin(), math.tan() #etc.\nmath.degrees(), math.radians() #conversão de um pro outro\n\n\nmath.e, math.pi, math.inf\n\n\n\n9.2.3 Módulo statistics\nReferência: https://docs.python.org/3/library/statistics.html\n\nimport statistics as stat\n\n\nstat.mean()\nstat.geometric_mean()\nstat.harmonic_mean()\nstat.median()\nstat.mode('aaabbb'), stat.multimode('aaabbbc') #('a', ['a', 'b'])\n\n\nstat.quantiles(iterable, n_quantis, method) #método 'inclusive' se a amostra tiver os maiores valores da população, e 'exclusive' (default) c.c.\n\n\nstat.stdev(), stat.pstdev()\nstat.variance(), stat.pvariance()\n#versões amostrais e populacionais, respectivamente\n\n\nstat.covariance()\nstat.correlation()\n\n\n\n9.2.4 Módulo random\nReferência: https://docs.python.org/3/library/random.html\n\nimport random as rd\n\n\nrd.seed(seed)\n\n\nrd.randint(1, 10), rd.random()\n\n\nrd.choices(my_list, weights=[0, 10, 80, 10], cum_weights=None, k=10)\n#rd.choices(my_list, weights=None, cum_weights=[0, 10, 90, 100], k=10)\n\n\nprint(my_list)\nrd.shuffle(my_list) #nenhum output\nmy_list #alterou a lista\n\n\nprint(rd.sample(my_list, len(my_list), counts=None)) #nova lista\nprint(my_list) #não alterou a lista\nprint(rd.sample(my_list, 7, counts=[1, 2, 5, 2]))\n#a lista usada foi [3, 2, 2, 4, 4, 4, 4, 4, 1, 1]\n\n\nrd.uniform(2, 8)\nrd.gauss(mu, sigma)",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Outros Tópicos</span>"
+    ]
+  },
+  {
+    "objectID": "1-others.html#funções-sobre-manipulação-de-texto",
+    "href": "1-others.html#funções-sobre-manipulação-de-texto",
+    "title": "9  Outros Tópicos",
+    "section": "9.3 Funções Sobre Manipulação de Texto",
+    "text": "9.3 Funções Sobre Manipulação de Texto",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Outros Tópicos</span>"
+    ]
+  },
+  {
+    "objectID": "1-others.html#funções-não-essenciais",
+    "href": "1-others.html#funções-não-essenciais",
+    "title": "9  Outros Tópicos",
+    "section": "9.4 Funções Não Essenciais",
+    "text": "9.4 Funções Não Essenciais\n\n9.4.1 Funções relacionadas à tipos de variáveis\n\nbin(10)\nhex(445125215) # números hexadecimais\nint('1000', 2) # \"1000 base 2\"\nord('a'), chr(97) # o item numero 97 no 'dicionário' UNICODE\n#chr(ord('a'))\n#ord(chr(98))\n\n\n\n9.4.2 Funções sobre armazenamento de variáveis\n\na = 10 #lembre deste 10!\nrepr(dir())\n# repr: retorna um string do objeto\n# dir: todas os nomes no diretório atual\n\n\nrepr(dir([1,3]))\n\n\nlist(globals().items())[1:5]\n\n\ndict(list(globals().items()))\ndict(list(globals().items()))['__name__']\n\n\n\n9.4.3 Outras funções\n\nopen(file_path, mode) #abre um arquivo\n#Mode: 'r', 'w', 'x', 'a'; '+'; 'b' ou 't'\n# 'r' = read\n# 'w' = write\n# 'x' = Create\n# 'a' = Append\n# 'b' = Binary\n# 't' = Text\n\n\nhelp() #abre o prompt de ajuda no terminal\n\n\n\n9.4.4 Módulo os\nReferência: https://docs.python.org/3/library/os.html, https://www.youtube.com/watch?v=tJxcKyFMTGo\n\nimport os\n\n\nrepr(dir(os))\n\n\nos.getcwd()\nos.chdir('/User/Michel')\n\n\nos.listdir()\n\n\nos.rmdir('aulas gvcode')\nos.removedirs('name/subname')\n\n\nos.rename('text.txt', 'new.txt')\n\n\nos.stat('text.txt') #tamanho, data de criação e modificação, etc\n\n\n\n9.4.5 Módulo ScyPy\nReferências: https://docs.scipy.org/doc/scipy/tutorial/index.html#user-guide\n\nEstatística: https://scipy.github.io/devdocs/reference/stats.html\nOtimização: https://scipy.github.io/devdocs/reference/optimize.html\nÁlgebra linear: https://scipy.github.io/devdocs/reference/linalg.html\nInterpolação: https://scipy.github.io/devdocs/reference/generated/scipy.interpolate.interp1d.html#scipy.interpolate.interp1d\n\n\nimport scipy.stats\n\n\nscipy.stats.linregress(x, y)\n\nAqui, as funções menos essenciais, de consulta para vocês.\nReferência: https://docs.python.org/3/library/functions.html",
+    "crumbs": [
+      "A Linguagem",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Outros Tópicos</span>"
+    ]
+  },
+  {
+    "objectID": "2-matrix_df.html",
+    "href": "2-matrix_df.html",
+    "title": "Visualização de Dados",
+    "section": "",
+    "text": "12 1. Numpy\n[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manipulação e Visualização de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "2-matrix_df.html#introdução",
+    "href": "2-matrix_df.html#introdução",
+    "title": "Visualização de Dados",
+    "section": "12.1 1.1 Introdução",
+    "text": "12.1 1.1 Introdução\nO que é Numpy? De acordo com o site oficial:\n\nNumPy is the fundamental package for scientific computing in Python. It is a Python library that provides a multidimensional array object, various derived objects (such as masked arrays and matrices), and an assortment of routines for fast operations on arrays, including mathematical, logical, shape manipulation, sorting, selecting, I/O, discrete Fourier transforms, basic linear algebra, basic statistical operations, random simulation and much more.\n\nAntes de tudo, vamos instalar e carregar a biblioteca:\n\nimport numpy as np\n\n\n12.1.1 O conceito de arrays\nO conceito que encapsula as principais novidades que a biblioteca traz é o de array, e sua diferença com listas.\nEm termos simplificados, podemos entender os arrays como um novo tipo de coleção, uma coleção homogênea/atômica, em oposição à listas, heterogêneas/genéricas. Isto é: todos os elementos de um array são do mesmo “tipo”, o que não é uma necessidade em listas.\nVeja exemplos abaixo, e se poderão ou não ser entendidos como arrays:\n\n[1] poderá.\n[1, 2] poderá.\n[1, \"a\"] não poderá, tem elementos de tipos diferentes.\n[1, [1, 2]] não poderá, tem elementos de tipos diferentes (inteiro e uma coleção).\n\nAlguns exemplos mais complexos:\n\n[[1, 2], [3, 4]] poderá! Arrays podem “conter si mesmos”, mas, especialmente, entenda isso como arrays podem ser “organizados em múltiplas dimensões”. No caso, seria um array bidimensional, uma matriz com linhas e colunas.\n[[1, 2], [3, 4, 5]] não poderá! Essa é outra novidade, os arrays devem ser “retangulares”, dentro de cada dimensão, todos os elementos devem ter o memso tamanho. Isso ficará mais claro a diante.\nE [[1, 2], [3, \"a\"]]? Não poderá. Tudo dentro de um array tem que ter o mesmo tipo. Também podemos pensar que, dentro de uma dimensão, tudo deve poder ser entendida como um array.\n\nOk, então, um array é um caso específico de uma lista, é uma lista com duas restrições:\n\nTodos os elementos devem ter o mesmo “tipo”.\nDeve ser retangulares.\n\n\n\n12.1.2 Benefícios do numpy\nPorque isso é útil? O que ganhamos com essa perda de generalização?\nNa vida real, muitas vezes nos deparamos com esse tipo de dado. Em bases de dado, normalmente cada coluna é uma variável, uma coleção de valores de um mesmo tipo. Além disso, são incontáveis os lugares onde matrizes aparecem, e não apenas as bidimensionais.\nCriar um framework que seja especializado nesses casos gera três benefícios principais:\n\nO clássico trade-off especialização-qualificação, o numpy é muito eficiente em realizar operações com esse tipo de dado. E o essa é uma das maiores propagandas que o numpy faz.\n\nInclusive, por trás dos panos, a nível técnico, arrays são objetos bem diferentes de listas.\n\nA criação de ferramentas especialmente intuitivas e úteis para o contexto.\nFacilitação do escopo, fica muito mais simples e intuitivo elencar as ferramentas que queremos ter para trabalhar.\n\nPense em como buscar as ferramentas relevantes para limpar uma base de dados, na documentação dos métodos de listas e bibliotecas math, stat, etc. Versus buscar as ferramentas na documentação do numpy.\n\n\n\n\n12.1.3 Vetorização\nA principal ferramenta/conceito criada para o contexto, para o “modo de pensar com arrays” é a vetorização.\nEu tenho certeza que vocês já tentaram fazer algo como [1, 2, 3] * 2, e tiveram vontade de desistir da programação ao ver que o resultado foi [1, 2, 3, 1, 2, 3] e não [2, 4, 6].\nPorque isso acontece? Lembre que listas são genéricas: é óbvio o que [1, \"a\", [3, 4]] * 2 deveria retornar? Não! Para cada elemento, o símbolo * é o mesmo, mas as operações são completamente diferentes. Não é tão natural aplicar transformações elemento-a-elemento em coleções genéricas.\nAgora, arrays, são homogêneos, é muito mais natural aplicar uma transformação elemento-a-elemento. Normalmente, quando estamos trabalhando com arrays, é porque é esse o tipo de transformação que queremos fazer. O numpy sabe disso, e as faz de um jeito muito eficiente. Esse é o conceito de transformações vetorizadas.\nVamos deixar isso mais claro com exemplos. Mas antes, veja um exemplo do ganho de eficiência com a vetorização:\n\nn = 10000000\na1 = np.arange(n)\nl1 = list(range(n))\n%timeit a1 * 2\n%timeit [x * 2 for x in l1]",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manipulação e Visualização de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "2-matrix_df.html#básico-sobre-arrays",
+    "href": "2-matrix_df.html#básico-sobre-arrays",
+    "title": "Visualização de Dados",
+    "section": "12.2 1.2 Básico sobre arrays",
+    "text": "12.2 1.2 Básico sobre arrays\n\n12.2.1 Criação e forma\nPara criar arrays, use a função numpy.array:\n\na1 = np.array([1, 1, 1])\na2 = np.array([[1, 0, 1], [3, 4, 1]])\na3 = np.array([[[1, 7, 9], [5, 9, 3]], [[3,2,1], [4,5,6]]])\nfor a in [a1, a2, a3]: print(a, \"\\n\")\n\n\nNote que começamos a “contar” pelo vetor, depois pelas linhas, depois pelas matrizes, etc.\nPara estudar o formato de um array, usamos .shape. Também podemos usar as funções len(), e .ndim:\n\nfor a in [a1, a2, a3]: print(a.shape, a.ndim, len(a), sep = \" -- \")\n\nArrays são costumeiramente chamados de ndarrays, arrays n dimensionais.\nArrays importados\nPodemos salvar arrays em arquivos, usando funções como:\n\nnumpy.save: salva como um “arquivo array” “.npy”.\nnumpy.savetxt: salva como um arquivo CSV, adequado apenas para arrays 1D e 2D.\nA biblioteca pickle: uma bilbioteca que consegue “conservar” qualquer objeto do python, mas pode ser demorado.\n\nSimilarmente, podemos importar arquivos, com funções numpy.load e numpy.loadtxt.\nPor fim, é comum converter outros objetos em arrays. Veja as funções numpy.asarray e pandas.Series.to_numpy.\nArrays placeholders\nTambém podemos criar arrays com valores comuns, temos várias funções, como:\n\nnumpy.empty: cria um array vazio com a forma especificada.\nnumpy.ones: cria um array preenchido com uns.\nnumpy.zeros: cria um array preenchido com zeros.\nnumpy.full: cria um array preenchido com um valor constante.\nnumpy.eye: cria uma matriz identidade.\nnumpy.linspace: cria um array com valores espaçados uniformemente dentro de um intervalo.\nnumpy.arange: cria um array com valores espaçados uniformemente dentro de um intervalo especificado.\n\n\nprint(\"Empty: \\n\", np.empty((2, 3)), \"\\n\")\nprint(\"Ones: \\n\", np.ones((2, 3)), \"\\n\")\nprint(\"Zeros: \\n\", np.zeros((2, 3)), \"\\n\")\nprint(\"Full: \\n\", np.full((2, 3), 5), \"\\n\")\nprint(\"Eye: \\n\", np.eye(3), \"\\n\")\nprint(\"Linspace: \\n\", np.linspace(0, 10, num=5), \"\\n\")\nprint(\"Arange: \\n\", np.arange(0, 10, 2), \"\\n\")\n\nPara mais informação sobre criação de arrays, veja API Ref. → Routines → Array creation:\n\nCriando por forma e valor.\nCriando por dados, e API Ref. → Routines → I/O.\nCriando por ranges.\nCriando matrizes.\n\n\n\n12.2.2 Random\nO numpy tem uma parte da biblioteca focada na geração de números aleatórios, numpy.random. Se tiver curiosidade, leia mais sobre como computadores geram números pseudo-aleatórios.\nTodas as distribuições que você pensar podem ser geradas pelo numpy:\n\nUniforme: numpy.random.uniform.\n\nUniforme 0-1: numpy.random.random.\nUniforme discreta A-B: numpy.random.integers.\n\nBinomial: numpy.random.binomial.\nNormal: numpy.random.normal.\nPoisson: numpy.random.poisson.\nSamplear um array: numpy.random.choice.\n\n\nprint(np.random.uniform(0, 1, 5), \"\\n\")\nprint(np.random.normal(0, 1, size=(3, 3)))\n\n\n\n12.2.3 Tipos de arrays\nMais cedo, falamos que todos os elementos de um arrays tem sempre o mesmo “tipo”. Em termos simplificados, o nome normalmente associado à “tipo” é dtype.\nUm elemento (um “escalar”) pode ter vários tipos, mas os mais comuns são:\n\nint_: números inteiros (integer).\nfloat_: números de ponto flutuante (floating-point). O tipo padrão.\nbool_: valores booleanos (True ou False).\nstr_: strings de texto.\nE outros menos utilizados: complex_: números complexos, object_: objetos Python genéricos, datetime64: datas e horários, timedelta64: diferenças entre datas e horários, category: categorias ou rótulos.\n\nAlguns comentários mais técnicos:\nNa realidade, embora exista o conceito de “número inteiro”, e o Python só defina um tipo de dado integer, existem muitas maneiras de representar um número na memória do computador. O numpy se importa com isso, e existem vários tipos para cada um dos conceitos acima.\n\nPor conta disso, o dtype pode aparecer com nomes diferentes como int64.\nSe você for muito nerd, talvez isso importe para o seu projeto. Para escolher um tipo específico use a função np.array com o argumento dtype = .... Leia mais sobre isso aqui.\nO tipo de um array x pode ser descoberto com x.dtype e x.dtype.name.\n\nMas e se eu tentar criar o array [1, \"a\"]? O numpy usa coerção, ele converte todos os elementos a um mesmo tipo, de acordo com uma lista de prioridade. De maneira simples, int → float → string. Você também pode converter um array para outro tipo usando o método x.astype(). Veja exemplos abaixo.\n\nprint(np.array([[1,2], [3.0, 4]]), \"\\n\")\nprint(np.array([[1,2], [3.0, \"4.0\"]]), \"\\n\")\nprint(np.array([[1,2], [3, 4]], dtype = np.complex_), \"\\n\")\nprint(np.array([[1,2], [3, 4]]).astype(str), \"\\n\")\n\nPara mais informações sobre arrays, como funcionam, como são salvos na memória, veja API Ref. → Array objects. Cuidado, muitos temas técnicos e desnecessários (para o momento).\nEspecialmente, foram ignorados dois tópicos de arrays:\n\nOs masked arrays, arrays com valores faltantes, API Ref. → Array objects → Masked arrays.\nE os datetime arrays, arrays de datas, API Ref. → Array objects → Datetimes and Timedeltas.\n\n\n\n12.2.4 Métodos\nNa aula passada vocês aprenderam que no Python, a maior parte dos construtos da linguagem são classes, e isso não é exceção para os ndarrays. Cada array é um objeto, uma instância dessa classe, e tem seus métodos.\nA lista completa de métodos pode ser vista na documentação da classe. Alguns interessantes são:\n\n.tolist().\n.sum() e .prod(); .cumsum() e .cumprod().\n.all() e .any().\n.max() e .min(); .argmax() e .argmin().\nmean(), .var() e .std().\n.sort(); .argsort().\n.choose().\n.round().\nEm breve, vamos falar um pouco mais sobre:\n\n.resise(), .reshape(), e .transpose(); flatten() e .ravel().\n.copy() e .view().",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manipulação e Visualização de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "2-matrix_df.html#operações-com-arrays",
+    "href": "2-matrix_df.html#operações-com-arrays",
+    "title": "Visualização de Dados",
+    "section": "12.3 1.3 Operações com Arrays",
+    "text": "12.3 1.3 Operações com Arrays\nLembre-se que o ponto mais importante é a vetorização. O numpy define “funções universais”, funções que podem ser aplicadas de forma vetorizadas.\nOs exemplos abaixo são bem expositivos, são as funções que vocês já conhecem, apresentadas rapidamente.\n\n12.3.0.1 Operações aritmétricas\nVeja mais em API Ref. → Routines → Mathematical functions.\n\na1, a2 = np.array([1,2,3]), np.array([4,5,6])\n\nprint(np.subtract(a1, a2), \"\\n\") #a1 + a2\nprint(np.divide(a1, a2), \"\\n\") #a1 * a2\nprint(np.exp(a1), \"\\n\")\nprint(np.sqrt(a1), \"\\n\")\nprint(np.sin(a1), \"\\n\")\nprint(np.log(a1), \"\\n\")\n\nTambém considere as constantes abaixo. Mais informações em API Ref. → Constants.\n\nnp.pi, np.e, np.nan, np.inf\n\n\n\n12.3.0.2 Operações matriciais\nVeja mais em API Ref. → Routines → Linear algebra.\n\na1, a2 = np.array([(1,2), (-1,-3)]), np.array([(4,5), (-4,-6)]) # Note o uso, indiferenciável, de tuplas\n\nprint(a1 * a2, \"\\n\")\nprint(np.dot(a1, a2), \"\\n\") #a1 @ a2\nprint(np.linalg.matrix_power(a1, 3), \"\\n\")\nprint(np.linalg.det(a1), \"\\n\")\nprint(np.linalg.inv(a1), \"\\n\")\nprint(np.linalg.norm(a1), \"\\n\")\nprint(np.linalg.eig(a1), \"\\n\")\n\n\n\n12.3.0.3 Operações com strings\nVeja mais em API Ref. → Routines → String operations.\n\na1, a2 = np.array(['olá', 'oi', 'oopa']), np.array([', tudo bem?', ', bem?', ', bão?'])\n\nprint(np.char.add(a1, a2), \"\\n\")\nprint(np.char.multiply(a1, [3, 1, 2]), \"\\n\")\nprint(np.char.capitalize(a1), \"\\n\")\nprint(np.char.count(a1, 'o'), \"\\n\")\nprint(np.char.find(a1, 'o'), \"\\n\")\n\n\n\n12.3.0.4 Operações lógicas/de comparação\nVeja mais em API Ref. → Routines → Logic functions. Também veja operações de sets em API Ref. → Routines → Set functions.\n\na1, a2 = np.array([(1,2), (-1,-3)]), np.array([(4,5), (-4,-6)])\n\nprint(np.greater(a1, a2), \"\\n\") #a1 &gt; a2\nprint((a1 == a2).any(), \"\\n\") #note the usage of ()\nprint(np.logical_or(a1 &gt; 1, a2 &lt; 0), \"\\n\") #a1 &gt; 1 or a2 &lt; 0\n\n\n\n12.3.0.5 Operações estatísticas\nVeja mais em API Ref. → Routines → Statistics.\n\na1 = np.random.normal(0, 1, 100000)\na2 = a1 + np.random.normal(0, 0.5, 100000)\n\nprint(np.mean(a1), \"\\n\")\nprint(np.median(a1), \"\\n\")\nprint(np.std(a1), \"\\n\")\nprint(np.quantile(a1, 0.25), \"\\n\")\nprint(np.corrcoef(a1, a2), \"\\n\")",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manipulação e Visualização de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "2-matrix_df.html#subsetting-e-copying",
+    "href": "2-matrix_df.html#subsetting-e-copying",
+    "title": "Visualização de Dados",
+    "section": "12.4 1.4 Subsetting e Copying",
+    "text": "12.4 1.4 Subsetting e Copying\nA referência básica está em User guide → Indexing on ndarrays.\nA indexação de arrays é feita de forma similar à listas, com a1[algo]. A maioria das técnicas disponíveis para listas está disponível aqui também.\nEssa parte é bem útil, porque lógicas similares de indexação podem ser utilizadas no pandas e em listas.\n\n12.4.1 Subseting básico\nCom uma dimensão, é simples. Conseguimos utilizar a técnica de indexes negativos.\n\na1 = np.array([1, 2, 3, 4])\nprint(a1, \"\\n\")\n\nprint(a1[0])\nprint(a1[-1])\n\nE com duas dimensões? Agora, temos que informar o que queremos pegar de cada dimensão, a2[algo1, algo2]:\n\na2 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])\nprint(a2, \"\\n\")\n\nprint(a2[0, 1])\n\nE se eu quiser selecionar mais do que um elemento? Aqui, também é possível utilizar a técnica de slicing :.\n\nprint(a1[1:3])\nprint(a1[1:])\nprint(a1[:2])\nprint(a1[:])\n\nCom duas dimensões é a mesma ideia, lembrando que precisamos falar o que queremos pegar de ambas as dimensões, as possibilidades aumentam.\n\nprint(a2[0, 0:2])\nprint(a2[0:2, 1])\nprint(a2[1:, :])\n\nCom n dimensões é a mesma ideia, com uma entrada em [] para cada dimensão.\nSe tiver curiosidade, veja dois truques usando ... e None nos índices aqui.\n\nan = np.arange(3**3).reshape(3, 3, 3)\n\nprint(an[2, 2, 2])\nprint(an[0, :, :])\n\nQuando você ficar pica, vai descobrir que dá para omitir dimensões, como abaixo. Mas por enquanto, não inventa, coloque um “algo” para cada dimensão, nem que o “algo” seja “selecione tudo” (:).\n\nprint(a3[0:])\n\nNote que essa noção do subset deixa claro qual é a “ordem” dos componentes de um array multidimensional. Isto é, quando pedimos for i in a3, o que será passado para i? Cada elemento? Cada coluna, cada linha? cada matriz?\n\nfor i in a3:\n    for j in mat:\n        for k in row: print(i)\n\nVemos que, do array tridimensional a3, i são as sub-matrizes, j são as linhas de uma sub-matriz, e i os elementos de cada linha. Isto é, a ordem é da maior/última/mais alta dimensão para a menor/mais baixa.\n\n\n12.4.2 Subseting avançado\nE se os índices que você quer obter estão em uma coleção? Podemos utilizar coleções de inteiros ou booleanos para acessar índices também!\n\nprint(a1[np.array([1, 2])]) #a1[[1, 2]]\na1[np.array([True, False, False, True])] #print(a1[[True, False, False, True]])\n\nNote que para booleanos, o índice-coleção precisa ser do mesmo tamanho da dimensão relevante.\nO legal, é que da para utilizar isso para criar filtros:\n\nprint(a1[a1 + 1 &gt; 2])\n\nExistem muitas outras técnicas utilizando essas ferramentas. Veja mais aqui.\n\n\n12.4.3 Copy versus view\nUm último comentário técnico, eu juro!\nE aquela história insuportável de x = ..., y = x, e uma mudança inocente em y quebrando seu código porque x mudou também? Como fica isso no numpy?\nSegue existindo 😴. Vou falar uma das frases já faladas abaixo, mas não se assuste.\n\nNo python, variáveis sempre são nomes referenciados a valores, mutating um valor – diferente de rebinding um valor – mostrará essa mudança em todos os nomes associados à ele.\n\nIsto é, essa questão é bem geral no python. Infelizmente, não é hora de entrar em detalhes na lógica por trás de tudo isso. Para saber mais, eu gosto muito desse post.\nO que precisamos saber agora é que sim, ainda estamos preocupados em criar .copy()’s dos arrays. Como uma regra de bolso, a menos que você de fato queira a referência ao objeto original, adicione o .copy().\nNote que essa questão está bem presente: quando fazemos y = x[1, :], y é uma cópia ou uma referência? Não é obvio, e varia de caso a caso. Não vou entrar em detalhes, mas o ponto é, tome cuidado, e use cópias sem medo.\nUm último ponto, que também não merece detalhe, é a existência de uma “semi-cópia”, ou shallow-copy, x.view(). Quais são as diferenças, quando eu uso um ou o outro? Meia noite eu te conto. Brincadeira, mas realmente, não vale falar sobre isso agora.\nFim!\nPronto! Vocês aprenderam o básico de numpy! Agora, podemos aplicar esse novo jeito de pensar para bases de dados, e conhecer a biblioteca especializada nisso, o pandas. Especialmente, relembre do que aprendemos, sobre a maneira de se pensar em dados vetorizados.\nExistem dois temas adicionais, manipulação de arrays (mudar o formato, adicionar itens, combinar, e dividir), e funções universais (tecnicas poderosas que as funções do numpy habilitam).",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manipulação e Visualização de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "2-matrix_df.html#introdução-1",
+    "href": "2-matrix_df.html#introdução-1",
+    "title": "Visualização de Dados",
+    "section": "13.1 2.1 Introdução",
+    "text": "13.1 2.1 Introdução\nO site oficial da biblioteca Pandas introduz ela da seguinte forma:\n\n“Pandas is a Python package providing fast, flexible, and expressive data structures designed to make working with “relational” or “labeled” data both easy and intuitive. It aims to be the fundamental high-level building block for doing practical, real-world data analysis in Python. (…) Pandas is built on top of NumPy and is intended to integrate well within a scientific computing environment with many other 3rd party libraries.”\n\nVeremos nessa aula as mais diversas aplicações dessa biblioteca e seremos apresentados a “tipos” de dados semelhantes aos vistos anteriormente, porém, no Pandas.\nVamos começar!\n\nPara instalação da biblioteca, basta utilizar do código de instalação:\n# pip install pandas\nEm caso de dúvidas, recomendamos acessar a aba de instalação do site: https://pandas.pydata.org/docs/getting_started/install.html\n\n\n13.1.1 Benefícios do Pandas:\nVocê está buscando uma maneira eficiente e poderosa de manipular e analisar dados em Python? Apresentamos o Pandas, a biblioteca que revoluciona a forma como lidamos com dados tabulares! É a escolha ideal para qualquer pessoa que deseja realizar análises de dados de maneira eficiente, flexível e poderosa em Python.\nAlguns pontos de destaque da biblioteca são:\n\nFacilidade de Uso: Manipule dados de forma simples e intuitiva, com estruturas de dados familiares como DataFrames e Séries, sem a complexidade de lidar diretamente com arrays ou listas.\nFlexibilidade de Dados: Armazene e trabalhe com dados de diferentes tipos (números, strings, datas, booleanos) em uma única estrutura.\nOperações Eficientes: Realize operações de manipulação de dados de forma rápida e eficiente, incluindo seleção, filtragem, ordenação, agrupamento, agregação e junção de dados de diferentes fontes.\nTratamento de Dados Ausentes: Lide facilmente com valores ausentes (NaN) em seus dados, com métodos integrados para detecção, preenchimento, remoção ou substituição desses valores, garantindo a integridade dos seus resultados.\nIntegração com Outras Ferramentas: Importe e exporte dados de e para uma variedade de formatos, como CSV, Excel, SQL, JSON, HTML, entre outros, facilitando a integração com outras ferramentas e sistemas.\nComunidade Ativa e Suporte: Faça parte de uma comunidade vibrante de usuários, com vasta documentação, tutoriais e suporte online, garantindo que você tenha o apoio necessário para aproveitar ao máximo o potencial do Pandas.\n\n\n13.1.1.1 Series e dataframe:\nO pandas se beneficia do uso de duas estruturas de dados principais (que se assemelham, até certo ponto, aos arrays que vimos anteriormente).\nA primeira delas, nomeada de Series, é uma estrutura de dados unidimensional que pode conter qualquer tipo de dado, sendo semelhante a uma matriz unidimensional ou a uma coluna em uma tabela.\nO dataframe se difere das Series por ser uma estrutura de dados bidimencional que se organiza em linhas e colunas, semelhantes a uma tabela de banco de dados ou uma planilha do Excel, e são muito usados em ciência de dados, análises financeiras, pesquisas acadêmicas, entre outros.",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manipulação e Visualização de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "2-matrix_df.html#básico-sobre-series-e-dataframes",
+    "href": "2-matrix_df.html#básico-sobre-series-e-dataframes",
+    "title": "Visualização de Dados",
+    "section": "13.2 2.2 Básico Sobre Series e Dataframes",
+    "text": "13.2 2.2 Básico Sobre Series e Dataframes\n\n13.2.1 Como podemos criar essas estruturas de dados?\nPara montarmos uma Series, utilizamos do comando pandas.Series(dados). Tenham em mente que esses dados podem estar em listas, dicinários, arrays…\n\nimport pandas as pd\n\ns = pd.Series({\"a\":[\"a\", \"do\", \"le\", \"ta\"],\"b\":[\"baby\",\"shark\"]})\n\ns2 = pd.Series([1,2,3,4,\"a\"])\n\ns3 = pd.Series([1,2]) #cria um index + dados\n\ns4 = pd.Series([3,4],[7,8]) # usa o primeiro como dado + segundo como index\n\ns4\n\nJá ao montarmos um DataFrame, usamos o comando pd.DataFrame(dados). Esses dados tem que ter o mesmo tamanho (lenght) para que possa ser criado.\n\ndf = pd.DataFrame({\"a\":[\"a\", \"do\", \"le\", \"ta\"], \"b\":[\"baby\",\"shark\",\"tutu\",\"tuturu\"]})\n#dfErrado = pd.DataFrame({\"e\":[\"r\",\"r\",\"a\",\"d\",\"o\"], \"E\":[\"r\",\"r\",\"o\"]})\ndf\n\n\n# Podemos, também, montar \"na marra\" o Data Frame:\ndf = pd.DataFrame([[19, 0, \"F\"], [20, 1, \"F\"], [60, 2, \"M\"]], index=[\"Júlia\", \"Mariana\", \"Antonio\"], columns=['Nome', 'Filhos', 'Sexo'])\ndf\n\n\n\n13.2.2 Outras Fontes:\nPodemos, a partir de dados da internet ou coleta de dados manuais, usar o Pandas para acessar base de dados. Segue alguns exemplos:\npd.read_excel(arquivo)\npd.read_CVS(arquivo)\npd.read_sql(arquivo)\n\nObs: o “arquivo” se refere a um url do arquivo ou um “endereço” de arquivo no computador do usuário.\nMais ferramentas: https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html\n\n\n13.2.3 Summarise:\nDe forma geral, temos algumas ferramentas principais para condensar dados com diferentes objetivos.\nAntes disso, veremos alguma ferramentas úteis para possíveis estudos da base:\n\nNúmero de Linhas e colunas no dataframe:\n\ndf.shape\n\nContar o número de valores únicos:\n\ndf[\"valor\"].value_counts() #retorna um número inteiro\n\nNúmero de valores únicos em uma coluna:\n\ndf[\"coluna\"].nunique()\n\nEstatísticas e Bescrições Básicas para cada coluna:\n\ndf.describe()\nO pandas fornece um grande conjunto de funções de resumo que operam em diferentes tipos de objetos do pandas (colunas de DataFrame, Series, GroupBy, Expanding e Rolling (ver abaixo)) e produzem valores únicos para cada um dos grupos. Quando aplicado a um DataFrame, o resultado é retornado como uma Series do pandas para cada coluna.\nSegue alguns exemplos:\n\n\n\nimage.png\n\n\nImportante: verifique o link oficial da página para saber mais\n\n13.2.3.1 Group Data:\nO “Group Data” (ou “Agrupamento de Dados”) na biblioteca Pandas refere-se a uma operação fundamental de análise de dados, na qual você divide um conjunto de dados em grupos com base em determinados critérios e, em seguida, aplica operações ou funções a esses grupos. Isso é feito principalmente usando o método .groupby() do Pandas.\n\n\n\nimage.png\n\n\nImportante! Acesse https://pandas.pydata.org/pandas-docs/stable/user_guide/groupby.html para saber mais.",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manipulação e Visualização de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "2-matrix_df.html#subset",
+    "href": "2-matrix_df.html#subset",
+    "title": "Visualização de Dados",
+    "section": "13.3 2.3 Subset",
+    "text": "13.3 2.3 Subset\nOs subconjuntos são porções específicas de um DataFrame que podem ser selecionadas com base em critérios como linhas, colunas ou ambos.\nExistem três tipos principais de subconjuntos: linhas, colunas e linhas e colunas simultaneamente.\n\n13.3.1 Subset linhas\nPara estudarmos os tópicos abaixo, vamos usar uma planilha fictícia.\n\nimport pandas as pd\n\narquivo = \"Clientes.xlsx\"\ndf = pd.read_excel(arquivo)\n\ndf\n\nNesse exemplo, a base de dados é extremamente pequena então não temos problema em rodarmos os dados. Em casos mais complexos, podemos pedir que o programa rode apenas os dados que precisamos para a manipulação.\n\n#Podemos apenas rodar a primeira linha (rótulos das colunas) quando a base é muito grande\ndf.head()\n\n#ou as primeiras x linhas\ndf.head(2)\n\n#ou as últimas x linhas\ndf.tail()\ndf.tail(3)\n\nPara mostrar alguma das fórmulas que temos a nossa disposição, vamos imaginar que você é estagiário desse estabelecimento: quais dados podemos tirar dessa tabela?\n\n#Primeiramente, vamos ver se os dados respeitam uma sequência lógica\nsubset1 = df[df[\"Idade\"]&lt;100]  #não faz sentido ter uma pessoa de mais de 100 anos\n\nsubset2 = subset1[subset1[\"Idade\"] &gt; 18]  #não faz sentido um \"cliente\" ser menor de idade\n\nsubset3 = subset2.drop(columns = \"Nome.1\")\n\nDF = subset3\n\nDF\n\n\n#agora, vamos analisar mais a fundo a tabela:\n\nInad = DF[DF[\"Inadimplente\"] == True]  #mais pra frente, ainda nessa aula, aprenderemos uma maneria relativamente mais simples para fazer isso (query)\n\nNãoInad = DF[DF[\"Inadimplente\"] == False]\n\nInadMaior = DF[(DF[\"Inadimplente\"] == True) & (DF[\"Idade\"] &gt; 18)] #nessa base de dados, nós já tiramos os Inad menores de idade mas vale o exemplo\n\nEstado = DF[(DF[\"Estado\"] == \"SP\") | (DF[\"Estado\"] == \"TO\")]\n\nMaisVelhos = DF.nlargest(3,\"Idade\")\n\nMaisNovos = DF.nsmallest(3,\"Idade\")\n\n#Inad\n#NãoInad\n#InadMaior\n#Estado\n#MaisNovos\n#MaisVelhos\n\nDa mesma forma que podemos selecionar com base nos critérios selecionados, podemos usar de funções que aleatorizem os dados:\n\nDF.sample(frac = 0.5) #aqui, pedimos para que o programa nos recorte uma fração aleatória do dataframe\n\n\nDF.sample(n=9) #ou podemos dar um valor para o tamanho da amostra aleatória\n\nOutra ferramenta para essas seleções é a query. Seu maior diferencial é que essa ferramenta permite usar a lógica Booleana para filtrar as linhas.\n\n#A lógica booleana faz com que o critério de seleção seja verificar se uma afirmação, a nossa escolha, é verdadeira ou falsa\n\nDF.query('Idade &gt; 50') #ele seleciona cada linha que a resposta de Idade&gt;50 == True\nDF.query('Nome.str.len() &gt; 5') #ele seleciona cada linha cujo comprimento do nome seja maior que 5\n\nDF.query('Idade &gt; 40 and Estado == \"SP\"')\nDF.query('Inadimplente == True and Dívida &gt; 1000')\n\n\nDF.query('Nome.str.startswith(\"B\")')\n\n\n\n13.3.2 Subset colunas\nAgora, vamos avançar para o próximo passo e aprender como criar subconjuntos de colunas. Os subconjuntos de colunas nos permitem focar em variáveis específicas dos nossos dados, facilitando a análise e visualização de informações relevantes.\n\n# Para selecionar apenas algumas colunas, temos um \"modelo\" base que seguimos\nDF[\"Nome\"]\nDF.Nome\n\nDF[[\"Nome\",\"Idade\"]]\n\nDF[[\"Nome\",\"Inadimplente\",\"Dívida\"]]\n\n#e se quisermos o nome e a dívida dos inadimplentes?\nCorte1 = DF[[\"Nome\", \"Inadimplente\", \"Dívida\"]]\nCorte2 = Corte1[DF[\"Inadimplente\"] == True]\nCorte3 = Corte2[[\"Nome\", \"Dívida\"]]\n\nCorte3\n\n\n\n13.3.3 Subset os dois juntos\nNós vimos que podemos manipular a base de dados de forma a filtrarmos linhas e colunas de forma individual. Agora, veremos algumas funções que unificam essas tarefas, ou seja, atua com as colunas e linhas.\n\n13.3.3.1 iloc e loc:\nComeçando pelo iloc, essa função é usada para acessar os dados de um DataFrame usando índices inteiros. Você pode usar o iloc para selecionar linhas e colunas com base em sua posição numérica no DataFrame. Ou seja, temos a posição do que queremos e usamos ele para selecionar o necessário.\nJá o loc é usado para acessar os dados de um DataFrame usando rótulos de índice. O loc permite selecionar linhas e colunas com base nos rótulos definidos para o índice e as colunas. Ou seja, sabemos o que queremos mas buscamos sua posição.\n\n#DF.iloc[1,0]  #linha da posição 1 (segunda linha) na coluna de posição 0 (primeira coluna)\n\n#DF.iloc[10:20] #Select rows 10-20.\n\nDF.iloc[:, [1, 2, 4]] #Select columns in positions 1, 2 and 5  e todas as linhas\n\nDF.iloc[[0,5,10,15],:] #Seleciona as linhas nas posições 0, 5, 10 e 15 e todas as colunas\n\n\nDF.loc[:, 'Idade':'Inadimplente'] #Select all columns between x2 and x4 (inclusive).\n\nDF.loc[\"Jaime\":\"Fred\", :] #Seleciona todas as linhas entre \"Jaime\" e \"Fred\"\n\nDF.loc[df['Idade'] &gt; 10, ['Inadimplente', 'Estado']]  #Select rows meeting logical condition, and only the specific columns .\n  #só as linhas que\n\n\n\n13.3.3.2 iat e at:\nEssas ferramentas são semelhantes ao ‘iloc’ e ‘loc’ que vimos, mas são usados para acessar valores únicos em um DataFrame, seja usando índices inteiros (posições) ou rótulos de índice, respectivamente.\nA ferramenta iat é mais eficiente para acesso baseado em posição, se baseando em índices para achar o valor, enquanto at é mais eficiente para acesso baseado em rótulos.\n\nDF.iat[0,0] #primeira linha da primeira coluna\n\nDF.iat[0,1] #primeira linha da segunda coluna\n\nDF.iat[1,0] #segunda linha da primeira coluna\n\nDF.iat[9,4] #décima linha da quinta coluna\n\n\nDF.at[0, \"Idade\"] #nós damos o rótulo/index e a coluna na qual ele deve procura-lo\n#DF.at[3, \"Nome\"]\n\nResumindo, use iloc/loc quando precisar acessar múltiplos valores ou fatias de dados e iat/at quando precisar acessar um único valor de forma eficiente. A escolha entre iloc/loc ou iat/at depende do tipo de operação que você está realizando e se está trabalhando com acessos únicos ou múltiplos no DataFrame.\nResumindo, use iloc/loc quando precisar acessar múltiplos valores ou fatias de dados e iat/at quando precisar acessar um único valor de forma eficiente. A escolha entre iloc/loc ou iat/at depende do tipo de operação que você está realizando e se está trabalhando com acessos únicos ou múltiplos no DataFrame.",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manipulação e Visualização de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "2-matrix_df.html#operarcriar",
+    "href": "2-matrix_df.html#operarcriar",
+    "title": "Visualização de Dados",
+    "section": "13.4 2.4 Operar/Criar",
+    "text": "13.4 2.4 Operar/Criar\n\n13.4.0.1 Operações em colunas\n\ndata = {'A': [1, 2, 3],\n        'B': [4, 5, 6]}\ndf = pd.DataFrame(data)\n\ndf\n\n\n# Adicionando uma nova coluna\ndf['C'] = [7, 8, 9]\n\ndf\n\n\n# Renomeando uma coluna\ndf.rename(columns={'A': 'A_Novo'}, inplace=True)\n\ndf\n\n\n# Aplicando uma fórmula a uma coluna\ndf['B_quadrado'] = df['B'].apply(lambda x: x ** 2)\ndf['B/2'] = df['B'].apply(lambda x: x / 2)\n\ndf['A+2'] = df['A_Novo'] + 2\ndf['A-2'] = df['A_Novo'] - 2\n\ndf\n\n\n# Removendo uma coluna\ndf.drop(columns=['B_quadrado'], inplace = True)\n\ndf\n\n\n# Adicionando duas colunas e armazenando o resultado em uma nova coluna\ndf['A+B'] = df['A_Novo'] + df['B']\n\ndf\n\n\n# Encontrando a soma de uma coluna\nsoma_B = df['B'].sum()\nsoma_B\n\n\n# Encontrando a média de uma coluna\nmedia_B = df['B'].mean()\n\nmedia_B\n\n\n# Filtrando linhas com base em uma condição em uma coluna\ndf_filtrado = df[df['A_Novo'] &gt; 2]\n\ndf_filtrado\n\n\n# Aplicando a função 'sqrt' a todos os elementos da coluna 'C'\nimport numpy as np\ndf['C'] = np.sqrt(df['C'])\n\ndf\n\n\n\n13.4.0.2 Operações em linhas e células\n\n# Aplicando uma função em todas as linhas\nsoma_por_linha = df.sum(axis=1)\n\nsoma_por_linha\n\n\n# Selecionando uma célula específica\nvalor_celula = df.at[0, 'B']\n\nvalor_celula\n\n\n# Atualizando o valor de uma célula específica\ndf.at[0, 'B'] = 100\n\ndf\n\n\n# Aplicando uma função em uma célula específica\ndf.at[0, 'B'] = df.at[0, 'B'] * 2\n\ndf\n\n\n# Removendo uma linha pelo índice\ndf.drop(index=0, inplace=True)\n\ndf\n\n\n# Inserindo uma nova linha\n\ndata = {'A': [1, 2, 3],\n        'B': [4, 5, 6]}\ndf = pd.DataFrame(data)\n\n# Novas linhas a serem adicionadas\nnovas_linhas = pd.DataFrame({'A': [10, 11], 'B': [20, 21]})\n\n# Concatenando os dois DataFrames\ndf = pd.concat([df, novas_linhas], ignore_index=True)\n\ndf\n\n\n# Ordenando o DataFrame por uma coluna específica\ndf = df.sort_values(by='A')\n\ndf\n\n\n\n13.4.1 Lidar com dados NA\n\ndata2 = {'A': [1, 2, 3, 4],\n        'B': [np.nan, 6, 7, np.nan],\n        'C': [10, np.nan, np.nan, 13]}\ndf_na = pd.DataFrame(data2)\n\n\n# Encontrar valores NA (ausentes) em um DataFrame\ndf_na.isna()\n\n\n# Remover colunas com valores ausentes\ndf_na.dropna(axis=1, inplace=True)\n\ndf_na\n\n\n# Remover linhas com valores ausentes\ndf_na.dropna(axis=0, inplace=True)\n\ndf_na\n\n\n# Preencher valores NA com um valor específico (por exemplo, zero)\ndf_na.fillna(0, inplace=True)\n\ndf_na",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manipulação e Visualização de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "2-matrix_df.html#numpy---manipulating-arrays",
+    "href": "2-matrix_df.html#numpy---manipulating-arrays",
+    "title": "Visualização de Dados",
+    "section": "14.1 1.5 Numpy - Manipulating Arrays",
+    "text": "14.1 1.5 Numpy - Manipulating Arrays\nExistem outras quatro operações relacionadas a manipular arrays como um todo: alterar a forma, adicionar/remover elementos, combinar, e dividir. Essa parte não é tão importante, e as funções são simples, vamos vê-las rapdiamente.\n\n14.1.1 Alterar a forma\nVeja as funções/métodos:\n\n.resize() e reshape(): para alterar a forma de um array, passando a nova forma como uma tupla.\ntranspose(): transpor arrays.\n.flatten() e .ravel(): achatar arrays.\n\n\n\n14.1.2 Adicionar e remover elementos\nVeja os funções:\n\nappend(), insert(), e delete().\n\n\n\n14.1.3 Combinar\nVeja as funções:\n\nconcatenate().\nvstack(), e hstack().\n\n\n\n14.1.4 Dividir\nVeja as funções:\n\n.hsplit() e .vsplit().",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manipulação e Visualização de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "2-matrix_df.html#numpy---funções-universais",
+    "href": "2-matrix_df.html#numpy---funções-universais",
+    "title": "Visualização de Dados",
+    "section": "14.2 1.6 Numpy - Funções Universais",
+    "text": "14.2 1.6 Numpy - Funções Universais\nExiste um último tópico interessante, mas mais avançado. As funções do numpy são bem poderosas e flexíveis. É possível:\n\nAplicá-las para cada dimensão separadamente – usando o argumento axis=.\nFiltrar dimensões para não aplicar – usando o argumento where=\nAplicar de modo a “acumular” ou “reduzir” o resultado – usando os métodos .accumulate() e .reduce().\n\nAprendam sobre esses tópicos em Api Ref. ⭢ Universal functions. Adicionalmente, Também vejam algumas táticas avançadas em Api Ref. ⭢ Routines ⭢ Functional programming.\nAbaixo apresento alguns exemplos sem contexto nenhum.\n\na1 = np.array([1,2,3])\n\nnp.add.accumulate(a1)\nnp.add.reduce(a1)\n\n\na2 = np.array([[1,2], [4,5]])\n\nprint(np.add.accumulate(a2, axis = 0))\nprint(np.add.reduce(a2, axis = 0))\n\n\nwhere1 = [True, True, False]\nwhere2 = [[True, False, False], [False, True, False], [False, False, True]]\n\nprint(np.add.reduce(a1, 0, where = where1), \"\\n\")\nprint(np.add.reduce(a2, 0, where = where2), \"\\n\")",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manipulação e Visualização de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "2-matrix_df.html#pandas---reshape",
+    "href": "2-matrix_df.html#pandas---reshape",
+    "title": "Visualização de Dados",
+    "section": "14.3 2.5 Pandas - Reshape",
+    "text": "14.3 2.5 Pandas - Reshape\nPrimeiro, vamos baixar uns exemplos:\n\ntables_links = {\n    'df1': 'https://raw.githubusercontent.com/tidyverse/tidyr/c6c126a61f67a10b5ab9ce6bb1d9dbbb7a380bbd/data-raw/table1.csv',\n    'df2': 'https://raw.githubusercontent.com/tidyverse/tidyr/c6c126a61f67a10b5ab9ce6bb1d9dbbb7a380bbd/data-raw/table2.csv',\n    'df3': 'https://raw.githubusercontent.com/tidyverse/tidyr/c6c126a61f67a10b5ab9ce6bb1d9dbbb7a380bbd/data-raw/table3.csv',\n    'df4a': 'https://raw.githubusercontent.com/tidyverse/tidyr/c6c126a61f67a10b5ab9ce6bb1d9dbbb7a380bbd/data-raw/table4a.csv',\n    'df4b': 'https://raw.githubusercontent.com/tidyverse/tidyr/c6c126a61f67a10b5ab9ce6bb1d9dbbb7a380bbd/data-raw/table4b.csv',\n    'df5': 'https://raw.githubusercontent.com/tidyverse/tidyr/c6c126a61f67a10b5ab9ce6bb1d9dbbb7a380bbd/data-raw/table6.csv'\n}\n\nfor i in tables_links.keys():\n    globals()[i] = pd.read_csv(tables_links[i])\n\n\n14.3.1 Reordenar\nLinhas:\n\ndf1.sort_values(by='cases', ascending=False)\n\nE colunas\n\ndf1.reindex(columns=['year', 'cases', 'population', 'country'])\n\n\n\n14.3.2 Renomear\nColunas:\n\ndf1.rename(columns={'cases': 'new_cases', 'population': 'new_population'}, inplace=False)\n\nLinhas:\n\ndf1.rename({0: 'Row1', 1: 'Row2', 2: 'Row3', 3: 'Row4', 4: 'Row5', 5: 'Row6'})\n\n\n\n14.3.3 Remodelar\nWide to long (melt):\n\nprint(df4a)\npd.melt(df4a, id_vars = [\"country\"], var_name = \"year\", value_name = \"cases\")\n\nLong to wide (pivot)\n\nprint(df2)\npd.pivot(df2, index = [\"country\", \"year\"], columns = \"type\", values = \"count\")\n\n\n\n14.3.4 Separar e unir colunas\nSeparar:\n\nprint(df3, \"\\n\")\n\ndf3[[\"cases\", \"population\"]] = df3[\"rate\"].str.split(\"/\", expand = True)\ndf3 = df3.drop(\"rate\", axis = 1)\nprint(df3)\n\nUnir:\n\nprint(df5, \"\\n\")\n\ndf5[\"year\"] = df5[\"century\"] + df5[\"year\"]\ndf5 = df5.drop(\"century\", axis = 1)\nprint(df5)",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manipulação e Visualização de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "2-matrix_df.html#pandas---combinar",
+    "href": "2-matrix_df.html#pandas---combinar",
+    "title": "Visualização de Dados",
+    "section": "14.4 2.6 Pandas - Combinar",
+    "text": "14.4 2.6 Pandas - Combinar\n\n14.4.1 Concatenar\nVeja a função: - .concat()\n\n\n14.4.2 Merge\nVeja as funções abaixo para unir dataframes de maneiras diferentes:\nStandard Joins:\n\n.merge()\n\nFiltering Joints:\n\n.isin()",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manipulação e Visualização de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "2-matrix_df.html#recapitulando",
+    "href": "2-matrix_df.html#recapitulando",
+    "title": "Visualização de Dados",
+    "section": "15.1 1.1 Recapitulando",
+    "text": "15.1 1.1 Recapitulando\nNas três primeiras aulas do curso, vocês aprenderam diversas ferramentas. Veja o diagrama abaixo, e atente por:\n\nRelembrar as ferramentas em si.\n\nTenha certeza que você de fato sabe todos esses temas.\n\nAgora com essa visão de cima, veja os conceitos mais gerais de ciência da computação associados às ferramentas.\n\nO foco do curso não foi explicar essas generalizações, mas elas são muito úteis, tanto para entender melhor como o python funciona, quanto para facilitar aprender outras linguagens no futuro.\n\nVeja como as ferramentas condicionam novas maneiras de pensar em dados/problemas.\n\nNa última aula, vocês aprenderam o conceito de vetores homogêneos, e o novo modo de pensar da vetorização. Mais especificamente, também aprenderam a maneira de pensar em “bases de dados”\n\n\nNa aula de hoje, vocês vão aprender dois novos contextos: (i) um tipo específico de organização de bases de dados, os dados tidy, e (ii) a maneira de usar dados tidy para resolver problemas, com a Ciência de Dados, e as etapas de seus projetos.\nAdicionalmente, vão ver novas ferramentas: para a parte de arrumação de dados, vocês já a conhecem, é o pandas, mas para a visualização, vão aprender a biblioteca gráfica matplotlib.",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manipulação e Visualização de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "2-matrix_df.html#projetos-de-ciência-de-dados",
+    "href": "2-matrix_df.html#projetos-de-ciência-de-dados",
+    "title": "Visualização de Dados",
+    "section": "15.2 1.2 Projetos de Ciência de Dados",
+    "text": "15.2 1.2 Projetos de Ciência de Dados\n\n15.2.1 A Ciência de Dados\nA Ciência de Dados é um campo gigante, que nasceu via uma demanda de expandir a estatística para vias de “learn from data”, “more emphasis on data preparation and presentation rather than statistical modeling”, e “emphasis on prediction rather than inference”. Atualmente, o termo não é super bem definido, e o campo tem muita intersecção com outras disciplinas.\nDe acordo com a Wikipedia:\n\nData science is an interdisciplinary academic field that uses statistics, scientific computing, scientific methods, processes, algorithms and systems to extract or extrapolate knowledge and insights from data.\n\nFontes: “50 Years of Data Science” (2017) e Wikipedia.\n\n\n15.2.2 As etapas de um projeto\nMais interessante que ficar tentando definir a disciplina, vamos entendê-la na prática. Como a aula é minha, e eu faço o que eu quiser, vou utilizar a explicação do livro “R for Data Science”.\nUm projeto comum, no geral, se parece como abaixo. Veja uma breve explicação de cada tópico.\n\n\n15.2.2.1 Importing\nA primeira etapa é a importação. Alguns comentários:\n\nOs dados podem vir de várias fontes, como arquivos locais, bancos de dados, APIs (application programming interface), ou de sites (via web scrapping).\nOs dados podem estar em vários formatos como CSV, Excel, JSON, entre outros. É interessante ter um conhecimento básico de como cada um funciona.\nCada tipo de fonte tem uma maneira diferente de se interagir, e cada formato exige sua própria função. Para os casos mais simples, o pandas (e qualquer outra biblioteca de dataframes), tem funções para I/O.\n\nNão vamos entrar em detalhes nesse tema. Não é algo super extenso nem complexo, e existem muitas referências online. Uma das mais completas que achei foi esse tutorial da RealPython.\n\n\n15.2.2.2 Tidy\nA próxima etapa é arrumar, tidy, os dados. Vamos falar sobre isso com mais detalhe, mas existe uma noção bem específica do que são dados arrumados, tidy data.\nAs três próximas etapas existem dentro de um ciclo.\n\n\n15.2.2.3 Transform\nMesmo com dados já arrumados, ainda temos o interesse de transformá-los, para conseguir obter insights novos da mesma base de dados. Na aula de hoje, vamos dar alguns exemplos de interesses, e este tema ficará mais claro.\nVisualizar e modelar os dados trará novos insights e novas demandas, de modo que estamos constantemente transformando os dados para criar novas visualizações e modelagens.\nTidy e transform juntos são chamados de data wrangling.\n\n\n15.2.2.4 Visualize\nAqui, serei preguiçoso, o texto do Hadley Wickham é muito bom:\n\nVisualisation is a fundamentally human activity. A good visualisation will show you things that you did not expect, or raise new questions about the data. A good visualisation might also hint that you’re asking the wrong question, or you need to collect different data. Visualisations can surprise you, but don’t scale particularly well because they require a human to interpret them.\n\n\n\n15.2.2.5 Model\nUm modelo é, em termos simplificados e a depender do contexto, um conjunto de hipóteses sobre o mundo – sobre o processo gerador dos dados –, acrescido com um método matemático e computacional de estimar esse processo.\n\nModels are a fundamentally mathematical or computational tool, so they generally scale well. (…) But every model makes assumptions, and by its very nature a model cannot question its own assumptions. That means a model cannot fundamentally surprise you.\n\n\n\n15.2.2.6 Comunication\nO último passo é comunicação. As linguagens de programação provém ferramentas para expor seus resultados. O próprio Jupyter Notebook onde esta aula foi escrita é um exemplo disso. Mas existem muitas outras ferramentas mais avançadas para criar reports, livros, páginas na web, aplicativos, etc. No curso de trainee, não iremos cobrir essa etapa com detalhe.\nPor fim, dos últimos comentários. Primeiro, e a programação?\n\nSurrounding all these tools is programming. Programming is a cross-cutting tool that you use in every part of the project. You don’t need to be an expert programmer to be a data scientist, but learning more about programming pays off because becoming a better programmer allows you to automate common tasks, and solve new problems with greater ease.\n\nE o que falta?\nNo curso do trainee iremos explicar todas as etapas (fora comunicação), mas é só isso que você precisará? Não, cada projeto exige seu conhecimento específico, em cada tema, cada disciplina, existem conceitos próprios que entrarão em alguma das etapas aqui descritas. Mas tudo bem, o importante é vocês saberem a base, e conseguirão ir atrás do adicional por conta própria.\n\n\n\n15.2.3 A Organização de um script\nAcima temos as etapas “teóricas” de um projeto, mas como um script é organizado na prática? Normalmente nas seguintes seções:\n\nIntrodução:\n\nDescrição do problema.\nDescrição dos dados (fontes, questões técnicas, etc.).\nSetup do código (importar módulos, definir funções, etc.).\n\nImportar e arrumar:\n\nImportar os dados [importar].\nTransformá-los em um dataframe tidy [arrumar].\nLidar com NAs [arrumar].\n\nPré-processamento dos daods:\n\nAnalisar cada variável, seu tipo, valores NA/NaN, e mais:\n\nVariáveis categóricas – categorias, distribuição [visualizar]..\nVariáveis numéricas – range, distribuição [vis.].\n\nCorrigir problemas observados [transformar].\n\nAnálise exploratória:\n\nExplorar a relação entre as variáveis, especialmente entre os x’s e os y’s.\nY binário: distribuição condicional em cada x [vis.].\nY contínuo: distribuição conjunta em cada x [vis.].\nConseguir insights sobre o problema e transformar/criar variáveis para a modelagem [trans.].\n\nModelagem:\n\nDividir base em treino e teste, balancear os dados [trans.].\nDefinir os modelos e aplicá-los. Variar os hiperparâmetros [modelar].\nVisualizar os resultados [vis.].\nAdquirir insights, transformar os dados de acordo, e remodelar [trans.] [modelar].\n\nComunicar:\n\nGerar uma visualização final com os pontos principais do processo e principais resultados [vis.].\nComunicar os resultados [comunicar].\n\n\nTodas essas etapas serão explicadas na prática na aula 6, então não se preocupem tanto por enquanto.",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manipulação e Visualização de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "2-matrix_df.html#sumarisação-dos-dados",
+    "href": "2-matrix_df.html#sumarisação-dos-dados",
+    "title": "Visualização de Dados",
+    "section": "17.1 3.1 Sumarisação dos Dados",
+    "text": "17.1 3.1 Sumarisação dos Dados\n[Maneiras de conseguir “resumir” dados, criar estatísticas descritivas em cima de uma base de dado]\n[Alguns links:\nhttps://pandas.pydata.org/docs/getting_started/intro_tutorials/06_calculate_statistics.html https://www.geeksforgeeks.org/pandas-groupby-summarising-aggregating-and-grouping-data-in-python/ https://www.geeksforgeeks.org/pandas-groupby-summarising-aggregating-and-grouping-data-in-python/]\nVamos começar carregando dados:\n\nimport pandas as pd\n\n\ndf = pd.read_csv(\"https://drive.google.com/uc?id=1u2MEH_DTBMyG3clVKA4Q5FEpntLZNKeE\")\ndf\n\n\n17.1.1 Sumarisando o dataframe como um todo\n[funções .info() e .describe(). tem mais alguma função tipo essas?]\n\n\n17.1.2 Sumarisando variáveis categóricas\n[explicar o .value_counts. mais algum método legal?]\n\ncounts = df['Fuel_Type'].value_counts(normalize = True)\n\nprint(counts)\ncounts.plot(kind = \"bar\")\n\n\n\n17.1.3 Sumarisando variáveis contínuas\n[explicar as estatísticas de .describe, density, e boxplot. mais algum método legal?]\nAs estatísticas descritivas principais estão na tabela “describe”, mas também podem ser obtidas individualmente.\n\nprint(df['Price'].mean()) # Também existe .sum(), .min(), etc.\n\ndf['Price'].describe()\n\nDe modo mais geral, mas menos mensurável, podemos olhar para a distribuição da variável como um todo, e uma visualização simplificada com boxplots.\n\ndf['Price'].plot.density()\n\n\ndf['Price'].plot.box()\n\n\n\n17.1.4 Analisando grupos nos dados\n[explicar fazer esses summaries com groupby, e usando o argumento by=… nas funções de plotting. ver https://www.shanelynn.ie/summarising-aggregation-and-grouping-data-in-python-pandas/ por exemplo]\n\n[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manipulação e Visualização de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "2-matrix_df.html#ggplot",
+    "href": "2-matrix_df.html#ggplot",
+    "title": "Visualização de Dados",
+    "section": "17.2 GGPlot",
+    "text": "17.2 GGPlot\n[a fazer]",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manipulação e Visualização de Dados</span>"
+    ]
+  },
+  {
+    "objectID": "2-matrix_df.html#matplotlib",
+    "href": "2-matrix_df.html#matplotlib",
+    "title": "Visualização de Dados",
+    "section": "17.3 Matplotlib",
+    "text": "17.3 Matplotlib\n[a fazer]\n[alguns links: https://matplotlib.org/stable/users/explain/quick_start.html; https://matplotlib.org/3.8.3/users/index.html; https://matplotlib.org/cheatsheets/_images/cheatsheets-1.png; https://matplotlib.org/3.8.3/index.html, https://matplotlib.org/3.8.3/api/index.html] ### Anatomia de uma figura\n\n\nFigure\nAxis\nArtist\n\n[explicar isso dai] ### O estilo da programação\n[explicar https://matplotlib.org/stable/users/explain/quick_start.html#coding-styles por cima e apresentar um exemplo) ### Plots\n[explicar os plots possíveis] ### Estética\n[alterando a estética dos dados, isto é, cores, markers, etc.] ### Tema\n[alterando a estética da figura (não dos dados), isto é, eixos, título, etc.] ### Plots combinados\n[subplots e tals]",
+    "crumbs": [
+      "Machine Learning",
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Manipulação e Visualização de Dados</span>"
+    ]
+  }
+]

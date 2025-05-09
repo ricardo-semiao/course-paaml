@@ -1,0 +1,102 @@
+# Programação Orientada a Objeto
+
+[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]
+
+
+### Classes, objetos, e métodos
+
+As classes são compostas de
+
++ **Atributos** ou **Propriedades** (*Attributes* ou *Properties*): São dados ou estados característicos daquela classe. Por exemplo, a classe "ações" pode ser modelada como tendo um preço médio, um volume diário, e um ticker.
+
++ **Métodos**: São as funções que são específicos daquela classe, muitas vezes utilizam os próprios atributos da classe para realizar uma operação. Por exemplo, pode-se criar um método na classe "ações" que mutliplique o preço médio pelo volume diário para se obter o volume financeiro médio.
+
+Mas então, o que são os objetos?
+
++ **Classe** (*class*), estrutura de dados / procedimentos / funções que podem se repetir no programa, e;
+
++ **Objeto** (*object*), instâncias (exemplos específicos) das classes.
+
+Qualquer estrutura que possua múltiplas instâncias pode ser caracterizada como uma classe (*class*), e qualquer instância/exemplo dessa estrutura pode ser um objeto (*object*).
+
+### Criando classes e objetos
+
+Usamos a palavra ***class***, o nome da classe (com a primeira letra em maísculo, por convenção), e "()", indicando uma ação (no caso, criar um objeto da classe).
+
+Normalmente a definição de uma classe começa pelo método __init__. ele é um método especial, o método construtor, e indica que todas as linhas subordinadas a ele devem ser executadas quando um objeto daquela classe é criado. As linhas que estão subordinadas ao método __init__ são aquelas que estabelecem os atributos.
+
+Além disso, a palavra self é uma referência a todos os atributos de um objeto. Os métodos levam como argumento o próprio objeto em si, ou seja, o método que tem self como argumento pode acessar e trabalhar com todos os elementos do objeto em si.
+
+Depois do método construtor (__init__), em geral, vêm os métodos ordinários, aqueles que executam ações.
+
+```{python}
+class aluno():
+  #criando atributos
+    def __init__(self,nome,nota1,nota2):
+        self.nome = nome
+        self.nota1 = nota1
+        self.nota2 = nota2
+  #criando funções
+    def media(self):
+        return (self.nota1 + self.nota2) / 2
+a = [1, 2, 3, ...]
+```
+
+```{python}
+michel = aluno(nome = "Michel", nota1 = 7, nota2 = 10)
+print(michel.nome,michel.media())
+```
+
+```{python}
+class Stocks():
+    def __init__(self, ticker_name, price_inDolars, volume_inUnits, beta_float,
+                 divDate_string, enterpriseValue_inDolars, price_inList):
+        self.ticker = ticker_name # preenchendo name com o valor referente ao argumento full_name
+        self.price_last = price_inDolars
+        self.volume_last_day = volume_inUnits
+        self.beta = beta_float
+        self.divDate = divDate_string
+        self.enterpriseValue = enterpriseValue_inDolars
+        self.price_hist = price_inList
+        self.portShare = 0# não vem de argumento, sempre uma ação começa com esse valor de argumento
+
+    def eatfinVolume(self): # self entra como argumento para que o procedimento possa acessar os atributos e seus valores.
+        return self.price_last * self.volume_last_day
+
+    def addPrice(self, price):
+        self.price_hist.append(price)
+
+    def changeShare(self, newshare):
+        self.portShare = newshare
+
+    def printPrice(self):
+        print("The stock " + self.ticker + " has a last price of " + str(self.price_last))
+
+    def __str__(self):
+        return "The stock " + str(self.ticker) + " has a last price of " + str(self.price_last)
+```
+
+```{python}
+petr = Stocks(ticker_name = "PETR4.SA",
+              price_inDolars = 30.13,
+              volume_inUnits = 93824145,
+              beta_float = 1.33,
+              divDate_string = "Aug 12, 2022",
+              enterpriseValue_inDolars = 594060000000,
+              price_inList = [29.80, 30.39, 29.44])
+
+print(petr.ticker)
+
+petr.eatfinVolume()
+
+petr.printPrice()
+
+petr.price_last = 31.23
+print(petr.price_last)
+
+petr.nationality = "Brazil"
+print(petr.nationality)
+
+print(petr)
+```
+

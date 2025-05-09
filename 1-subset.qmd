@@ -1,0 +1,19 @@
+# Subsetting
+
+<!-- falar de matrizes, ent falar de numpy no anterior -->
+
+[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]
+
+
+## Subset de Coleções Básicas
+
+[a fazer]
+
+## Subset de Arrays
+
+[a fazer]
+
+## Subset de Dataframes
+
+[a fazer]
+

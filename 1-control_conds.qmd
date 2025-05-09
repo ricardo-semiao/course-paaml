@@ -1,0 +1,25 @@
+# Control Flow e Condições
+
+[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]
+
+
+## If e Else
+
+[a fazer]
+
+## While e For
+
+[a fazer]
+
+## Keywords
+
+[a fazer]
+
+## Comprehension de Coleções
+
+[a fazer]
+
+## Error Handling
+
+[a fazer]
+

@@ -1,0 +1,3 @@
+# Bem Vindo! {.unnumbered}
+
+Este livro contém meus estudos sobre Python. Ele existe no contexto dos meus outros materiais, "Ciência da Computação: Introdução e Aplicações" e "R: Fundamentos e Ciência de Dados". Em cada linguagem, dou o foco em (i) o seu forte em aplicações, e (ii) seus conceitos da CC mais relevantes. No caso do Python, foco em explicar suas características como uma linguagem orientada ao objeto, suas aplicações em machine learning, e suas aplicações mais generalistas.

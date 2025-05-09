@@ -1,0 +1,53 @@
+project:
+  type: book
+  output-dir: docs
+  post-render: assets\template\adust_links.py
+
+format:
+  html:
+    template: assets\template\rsquartobook_html.template
+    theme:
+      - cosmo
+      - brand
+
+execute: 
+  eval: false
+
+bibliography: references.bib
+
+book:
+  title: "Python: Automação, Apps, e Machine Learning"
+  author: "Ricardo Semião e Castro"
+  date: "07/05/2025"
+  site-url: https://ricardo-semiao.github.io/course-paaml/
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - part: "A Linguagem"
+      chapters:
+        - 1-intro_python.qmd
+        - 1-oop.qmd
+        - 1-sintax_variables.qmd
+        - 1-data_collections.qmd
+        - 1-control_conds.qmd
+        - 1-subset.qmd
+        - 1-funs_envs.qmd
+        - 1-others.qmd
+    - part: "Machine Learning"
+      chapters:
+        - 2-intro_ml.qmd
+        - 2-matrix_df.qmd
+        - 2-shallow.qmd
+        - 2-deep.qmd
+    - part: "Automação"
+      chapters:
+        - 3-intro_automation.qmd
+        - 3-webscrap.qmd
+        - 3-others.qmd
+    - part: "Aplicações"
+      chapters:
+        - 4-intro_app.qmd
+        - 4-jango_jinja.qmd
+        - 4-shiny.qmd
+        - 4-others.qmd
+    - references.qmd

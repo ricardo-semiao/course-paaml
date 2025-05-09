@@ -1,0 +1,36 @@
+# Tipos de Valores e Coleções
+
+
+[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]
+
+
+## Tipos de Dados
+
+[a fazer]
+
+## Coleções
+
+O nome coleções vem de "conjunto" de dados, e existem quatro tipos diferentes, que servem para objetivos diferentes, baseados em suas características:
+
+|  | Ordenado | Mutável | Duplicatas |
+| --- | --- | --- | --- |
+| Listas | sim | sim | sim |
+| Tuples | sim | não | sim |
+| Sets | não | não | não |
+| Dicionários | sim | sim | não |
+
+Em termos mais simples listas são as mais flexíveis e menos específicas, tuples são listas imutáveis, e dicionários são listas nomeadas. Sets, os mais restritivos, funcionam como o conceito de "conjunto" da matemática.
+
+Cada coleção tem seus próprios métodos, dêem uma olhada neles nos tutoriais abaixo:
+
++ W3Schools: https://www.w3schools.com/python/python_lists.asp (mais simples e sucinto);
++ Documentação do Python: https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences (mais técnico, mais informações).
+
+## Arrays e o Numpy
+
+[a fazer]
+
+## Data frames e o Pandas
+
+[a fazer]
+

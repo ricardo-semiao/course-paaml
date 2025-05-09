@@ -1,0 +1,38 @@
+# Introdução
+
+A organização deste livro é descrita abaixo.
+
+
+## Parte 1: Introdução à Linguagem
+
+- Introdução ao Python
+- Programação Orientada a Objeto
+- Sintaxe e Variáveis
+- Tipos de Valores e Coleções
+- Control Flow e Condições
+- Subsetting
+- Funções e Ambientes
+- Outros Tópicos
+
+
+## Parte 2: Machine Learning
+
+- Machine Learning Teórica
+- Manipulação e Visualização de Dados
+- Shallow Learning
+- Deep Learning
+
+
+## Parte 3: Automação
+
+- Overview
+- Web Scrapping
+- Outros Tópicos
+
+
+## Parte 4: Aplicações
+
+- Overview
+- Jango
+- Shiny
+- Outros

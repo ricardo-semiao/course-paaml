@@ -1,0 +1,126 @@
+# Funções e Ambientes
+
+[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]
+
+
+## Sintaxe e Argumentos
+
+[a fazer]
+
+## Funções Lambda
+
+[a fazer]
+
+## Argumentos Extras
+
+O operador * e ** são operadores de "desempacotamento". Transformam uma lista
+
+*   Item da lista
+*   Item da lista
+
+em vários argumentos "soltos". Suponha que você tenha uma lista de argumentos que quer passar para uma função, no lugar de pegar cada elemento da lista individualmente, você pode usar *:
+
+```{python}
+args = [1, 2, 3]
+
+print(1, 2, 3) #resultado quisto
+print(args[0], args[1], args[2]) #pior
+print(*args) #melhor
+```
+
+O operador `**` é similar, mas transforma um dicionário em vários argumentos nomeados:
+
+```{python}
+args = (1, 2, 3)
+kwargs = {'sep': '-', 'end': '!\n'}
+
+print(1, 2, 3, sep = '-', end = '!\n') #resultado quisto
+print(args[0], args[1], args[2], sep = kwargs['sep'], end = kwargs['end']) #pior
+print(*args, **kwargs) #melhor
+```
+
+Também podemos fazer a operação inversa, criar uma função que receba um número desconhecido de argumentos (soltos/desempacotados). Podemos preceder qualquer nome de argumento com `*` ou `**`, e eles coletarão argumentos não utilizados, e os empacotarão em uma tuple e dicionário, respectivamente.
+
+```{python}
+def f(a, *args):
+  print(args)
+
+print(f(4, 1, 2, 3)) # a = 4 !!!
+
+def g(a, **kwargs):
+  print(kwargs)
+
+g(4, um = 1, dois = 2, tres = 3)
+```
+
+Isso é útil porque a partir disso, podemos utilizar esses argumetos com base nos métodos de dicionário e tuples. Ou, podemos desempacotar e passá-los diretamente à outras funções:
+
+```{python}
+def my_sum(*args):
+    result = 0
+    for x in args:
+        result += x
+    print(result)
+
+my_sum(1, 2, 3, 4, 5, 6)
+
+def my_print(*args, **kwargs):
+  print(*args, **kwargs)
+
+my_print('oi', 'olá', sep = ', ', end = '!')
+```
+
+```{python}
+def calcular_imc(*args, **kwargs):
+    resultados = []
+
+    for i, pessoa in enumerate(args):
+        peso = kwargs.get(f'peso{i}', None)
+        altura = kwargs.get(f'altura{i}', None)
+
+        if peso is None or altura is None:
+            print(f"Faltam dados para a pessoa {i+1}. Peso e altura são necessários.")
+            continue
+
+        if peso <= 0 or altura <= 0:
+            print(f"Valores inválidos para a pessoa {i+1}. Peso e altura devem ser positivos.")
+            continue
+
+        imc = peso / (altura ** 2)
+        resultados.append(imc)
+
+    return resultados
+
+imcs = calcular_imc(1,2,3, peso0=60, altura0=1.7, peso1=70, altura1=1.75, peso2=80, altura2=1.8)
+print(imcs)
+```
+
+## Ambientes e Busca de Valores
+
+[a fazer]
+
+```{python}
+a = 1
+b = 2
+c = 3
+d = 4
+
+def fun(a, **kargs):
+    b = 20
+    return [a, b, c, d]
+
+fun(a = 10, c = 30)
+```
+
+```{python}
+def fun(a, **kargs):
+    b = 20
+    return [a, b, c, d, e]
+
+fun(a = 10, c = 30)
+```
+
+## Generators e Operators
+
+[a fazer]
+
