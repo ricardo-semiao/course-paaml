@@ -186,7 +186,7 @@
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bem Vindo!</span></a>
+ <span class="menu-text">Bem Vindo(a)!</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -207,7 +207,7 @@
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./1-intro_python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">1. Introdução</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introdução ao Python</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -272,7 +272,7 @@
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./2-matrix_df.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Manipulação e Visualização de Dados</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Visualização de Dados</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -372,7 +372,7 @@
 <li><a href="#funções-lambda" id="toc-funções-lambda" class="nav-link" data-scroll-target="#funções-lambda"><span class="header-section-number">8.2</span> Funções Lambda</a></li>
 <li><a href="#argumentos-extras" id="toc-argumentos-extras" class="nav-link" data-scroll-target="#argumentos-extras"><span class="header-section-number">8.3</span> Argumentos Extras</a></li>
 <li><a href="#ambientes-e-busca-de-valores" id="toc-ambientes-e-busca-de-valores" class="nav-link" data-scroll-target="#ambientes-e-busca-de-valores"><span class="header-section-number">8.4</span> Ambientes e Busca de Valores</a></li>
-<li><a href="#generators-e-operators" id="toc-generators-e-operators" class="nav-link" data-scroll-target="#generators-e-operators"><span class="header-section-number">8.5</span> Generators e Operators</a></li>
+<li><a href="#operators" id="toc-operators" class="nav-link" data-scroll-target="#operators"><span class="header-section-number">8.5</span> Operators</a></li>
 </ul>
         </nav>
     </div>
@@ -382,7 +382,8 @@
             
         </header>
         
-<p>[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]</p>
+<p>Aqui aprenderemos sobre funções, inclusive como funcionam suas regras de scoping.</p>
+<hr>
 <section id="sintaxe-e-argumentos" class="level2" data-number="8.1">
 <h2 data-number="8.1" class="anchored" data-anchor-id="sintaxe-e-argumentos"><span class="header-section-number">8.1</span> Sintaxe e Argumentos</h2>
 <p>[a fazer]</p>
@@ -399,7 +400,7 @@
 <li>Item da lista</li>
 </ul>
 <p>em vários argumentos “soltos”. Suponha que você tenha uma lista de argumentos que quer passar para uma função, no lugar de pegar cada elemento da lista individualmente, você pode usar *:</p>
-<div id="8e7e7397" class="cell" data-execution_count="1">
+<div id="e9b83929" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>args <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>]</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>) <span class="co">#resultado quisto</span></span>
@@ -407,7 +408,7 @@
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="op">*</span>args) <span class="co">#melhor</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>O operador <code>**</code> é similar, mas transforma um dicionário em vários argumentos nomeados:</p>
-<div id="c540707b" class="cell" data-execution_count="2">
+<div id="d40fc9e3" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>args <span class="op">=</span> (<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>kwargs <span class="op">=</span> {<span class="st">'sep'</span>: <span class="st">'-'</span>, <span class="st">'end'</span>: <span class="st">'!</span><span class="ch">\n</span><span class="st">'</span>}</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -416,7 +417,7 @@
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="op">*</span>args, <span class="op">**</span>kwargs) <span class="co">#melhor</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Também podemos fazer a operação inversa, criar uma função que receba um número desconhecido de argumentos (soltos/desempacotados). Podemos preceder qualquer nome de argumento com <code>*</code> ou <code>**</code>, e eles coletarão argumentos não utilizados, e os empacotarão em uma tuple e dicionário, respectivamente.</p>
-<div id="21ab7866" class="cell" data-execution_count="3">
+<div id="d5babbe5" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> f(a, <span class="op">*</span>args):</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(args)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -428,7 +429,7 @@
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>g(<span class="dv">4</span>, um <span class="op">=</span> <span class="dv">1</span>, dois <span class="op">=</span> <span class="dv">2</span>, tres <span class="op">=</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Isso é útil porque a partir disso, podemos utilizar esses argumetos com base nos métodos de dicionário e tuples. Ou, podemos desempacotar e passá-los diretamente à outras funções:</p>
-<div id="4e5874ce" class="cell" data-execution_count="4">
+<div id="74dec483" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> my_sum(<span class="op">*</span>args):</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    result <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> x <span class="kw">in</span> args:</span>
@@ -442,7 +443,7 @@
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>my_print(<span class="st">'oi'</span>, <span class="st">'olá'</span>, sep <span class="op">=</span> <span class="st">', '</span>, end <span class="op">=</span> <span class="st">'!'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="e2fb27d3" class="cell" data-execution_count="5">
+<div id="63b363fc" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> calcular_imc(<span class="op">*</span>args, <span class="op">**</span>kwargs):</span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    resultados <span class="op">=</span> []</span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -470,7 +471,7 @@
 <section id="ambientes-e-busca-de-valores" class="level2" data-number="8.4">
 <h2 data-number="8.4" class="anchored" data-anchor-id="ambientes-e-busca-de-valores"><span class="header-section-number">8.4</span> Ambientes e Busca de Valores</h2>
 <p>[a fazer]</p>
-<div id="c129bb9b" class="cell" data-execution_count="6">
+<div id="9b87a13a" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">1</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="dv">2</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="dv">3</span></span>
@@ -482,7 +483,7 @@
 <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>fun(a <span class="op">=</span> <span class="dv">10</span>, c <span class="op">=</span> <span class="dv">30</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="67c38c64" class="cell" data-execution_count="7">
+<div id="78ea0e70" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> fun(a, <span class="op">**</span>kargs):</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    b <span class="op">=</span> <span class="dv">20</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> [a, b, c, d, e]</span>
@@ -490,8 +491,8 @@
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>fun(a <span class="op">=</span> <span class="dv">10</span>, c <span class="op">=</span> <span class="dv">30</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="generators-e-operators" class="level2" data-number="8.5">
-<h2 data-number="8.5" class="anchored" data-anchor-id="generators-e-operators"><span class="header-section-number">8.5</span> Generators e Operators</h2>
+<section id="operators" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="operators"><span class="header-section-number">8.5</span> Operators</h2>
 <p>[a fazer]</p>
 
 

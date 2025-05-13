@@ -1,1 +1,5 @@
 # Machine Learning Teórica
+
+A parte 2 do livro trata de Machine Learning. Seu primeiro capítulo começa com uma breve introdução teórica sobre o assunto, de forma simplista, abordando conceitos com um viés prático. Falarei sobre o que são modelos, hyperparâmetros, e diagnósticos. Falarei também sobre a caregorização dos modelos existentes.
+
+A seguir, introduzo as aplicações de ML no Python, que serão tratadas nos capítulos seguintes.

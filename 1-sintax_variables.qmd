@@ -1,6 +1,8 @@
 # Sintaxe e Variáveis
 
-[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]
+Aqui aprenderemos como é a sintaxe básica, e funciona a relação entre objetos e nomes no Python, abordando conceito como mutabilidade.
+
+---
 
 
 ## Sintaxe

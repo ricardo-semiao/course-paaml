@@ -1,12 +1,14 @@
 # Tipos de Valores e Coleções
 
+Aqui, aprenderemos quais os tipos de dados e coleções que existem no Python, seus atributos e métodos.
 
-[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]
+---
 
 
 ## Tipos de Dados
 
 [a fazer]
+
 
 ## Coleções
 
@@ -26,11 +28,17 @@ Cada coleção tem seus próprios métodos, dêem uma olhada neles nos tutoriais
 + W3Schools: https://www.w3schools.com/python/python_lists.asp (mais simples e sucinto);
 + Documentação do Python: https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences (mais técnico, mais informações).
 
+
 ## Arrays e o Numpy
 
 [a fazer]
+
 
 ## Data frames e o Pandas
 
 [a fazer]
 
+
+## Generators
+
+[a fazer]

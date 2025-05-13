@@ -1,8 +1,8 @@
 # Subsetting
 
-<!-- falar de matrizes, ent falar de numpy no anterior -->
+Aqui serão explicados os métodos de subsetting de coleções.
 
-[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]
+---
 
 
 ## Subset de Coleções Básicas

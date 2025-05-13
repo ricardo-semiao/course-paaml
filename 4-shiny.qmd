@@ -1,1 +1,3 @@
 # Shiny
+
+Explicação prática da biblioteca Python Shiny.

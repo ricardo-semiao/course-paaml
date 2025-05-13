@@ -1,9 +1,11 @@
 # Programação Orientada a Objeto
 
-[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]
+Aqui aprenderemos como é aplicado a programação orientada a objeto no Python.
+
+---
 
 
-### Classes, objetos, e métodos
+## Classes, objetos, e métodos
 
 As classes são compostas de
 
@@ -19,7 +21,7 @@ Mas então, o que são os objetos?
 
 Qualquer estrutura que possua múltiplas instâncias pode ser caracterizada como uma classe (*class*), e qualquer instância/exemplo dessa estrutura pode ser um objeto (*object*).
 
-### Criando classes e objetos
+## Criando classes e objetos
 
 Usamos a palavra ***class***, o nome da classe (com a primeira letra em maísculo, por convenção), e "()", indicando uma ação (no caso, criar um objeto da classe).
 

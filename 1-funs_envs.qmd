@@ -1,15 +1,19 @@
 # Funções e Ambientes
 
-[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]
+Aqui aprenderemos sobre funções, inclusive como funcionam suas regras de scoping.
+
+---
 
 
 ## Sintaxe e Argumentos
 
 [a fazer]
 
+
 ## Funções Lambda
 
 [a fazer]
+
 
 ## Argumentos Extras
 
@@ -120,7 +124,7 @@ def fun(a, **kargs):
 fun(a = 10, c = 30)
 ```
 
-## Generators e Operators
+
+## Operators
 
 [a fazer]
-

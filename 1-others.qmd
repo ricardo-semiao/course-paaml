@@ -1,6 +1,8 @@
 # Outros Tópicos
 
-[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]
+Outros tópicos. Abaixo alguns possíveis de serem abordados.
+
+---
 
 
 ## Funções Base

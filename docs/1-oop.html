@@ -186,7 +186,7 @@
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Bem Vindo!</span></a>
+ <span class="menu-text">Bem Vindo(a)!</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -207,7 +207,7 @@
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./1-intro_python.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">1. Introdução</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introdução ao Python</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -272,7 +272,7 @@
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./2-matrix_df.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Manipulação e Visualização de Dados</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Visualização de Dados</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -368,8 +368,8 @@
         <nav id="TOC" role="doc-toc" class="toc-active">
             <h2 id="toc-title">Table of contents</h2>
 <ul>
-<li><a href="#classes-objetos-e-métodos" id="toc-classes-objetos-e-métodos" class="nav-link active" data-scroll-target="#classes-objetos-e-métodos"><span class="header-section-number">3.0.1</span> Classes, objetos, e métodos</a></li>
-<li><a href="#criando-classes-e-objetos" id="toc-criando-classes-e-objetos" class="nav-link" data-scroll-target="#criando-classes-e-objetos"><span class="header-section-number">3.0.2</span> Criando classes e objetos</a></li>
+<li><a href="#classes-objetos-e-métodos" id="toc-classes-objetos-e-métodos" class="nav-link active" data-scroll-target="#classes-objetos-e-métodos"><span class="header-section-number">3.1</span> Classes, objetos, e métodos</a></li>
+<li><a href="#criando-classes-e-objetos" id="toc-criando-classes-e-objetos" class="nav-link" data-scroll-target="#criando-classes-e-objetos"><span class="header-section-number">3.2</span> Criando classes e objetos</a></li>
 </ul>
         </nav>
     </div>
@@ -379,9 +379,10 @@
             
         </header>
         
-<p>[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]</p>
-<section id="classes-objetos-e-métodos" class="level3" data-number="3.0.1">
-<h3 data-number="3.0.1" class="anchored" data-anchor-id="classes-objetos-e-métodos"><span class="header-section-number">3.0.1</span> Classes, objetos, e métodos</h3>
+<p>Aqui aprenderemos como é aplicado a programação orientada a objeto no Python.</p>
+<hr>
+<section id="classes-objetos-e-métodos" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="classes-objetos-e-métodos"><span class="header-section-number">3.1</span> Classes, objetos, e métodos</h2>
 <p>As classes são compostas de</p>
 <ul>
 <li><p><strong>Atributos</strong> ou <strong>Propriedades</strong> (<em>Attributes</em> ou <em>Properties</em>): São dados ou estados característicos daquela classe. Por exemplo, a classe “ações” pode ser modelada como tendo um preço médio, um volume diário, e um ticker.</p></li>
@@ -394,13 +395,13 @@
 </ul>
 <p>Qualquer estrutura que possua múltiplas instâncias pode ser caracterizada como uma classe (<em>class</em>), e qualquer instância/exemplo dessa estrutura pode ser um objeto (<em>object</em>).</p>
 </section>
-<section id="criando-classes-e-objetos" class="level3" data-number="3.0.2">
-<h3 data-number="3.0.2" class="anchored" data-anchor-id="criando-classes-e-objetos"><span class="header-section-number">3.0.2</span> Criando classes e objetos</h3>
+<section id="criando-classes-e-objetos" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="criando-classes-e-objetos"><span class="header-section-number">3.2</span> Criando classes e objetos</h2>
 <p>Usamos a palavra <strong><em>class</em></strong>, o nome da classe (com a primeira letra em maísculo, por convenção), e “()”, indicando uma ação (no caso, criar um objeto da classe).</p>
 <p>Normalmente a definição de uma classe começa pelo método <strong>init</strong>. ele é um método especial, o método construtor, e indica que todas as linhas subordinadas a ele devem ser executadas quando um objeto daquela classe é criado. As linhas que estão subordinadas ao método <strong>init</strong> são aquelas que estabelecem os atributos.</p>
 <p>Além disso, a palavra self é uma referência a todos os atributos de um objeto. Os métodos levam como argumento o próprio objeto em si, ou seja, o método que tem self como argumento pode acessar e trabalhar com todos os elementos do objeto em si.</p>
 <p>Depois do método construtor (<strong>init</strong>), em geral, vêm os métodos ordinários, aqueles que executam ações.</p>
-<div id="66a65f52" class="cell" data-execution_count="1">
+<div id="c0567b36" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> aluno():</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">#criando atributos</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>,nome,nota1,nota2):</span>
@@ -412,11 +413,11 @@
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> (<span class="va">self</span>.nota1 <span class="op">+</span> <span class="va">self</span>.nota2) <span class="op">/</span> <span class="dv">2</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, ...]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="7a61a5d6" class="cell" data-execution_count="2">
+<div id="22afdde1" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>michel <span class="op">=</span> aluno(nome <span class="op">=</span> <span class="st">"Michel"</span>, nota1 <span class="op">=</span> <span class="dv">7</span>, nota2 <span class="op">=</span> <span class="dv">10</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(michel.nome,michel.media())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="27fb1b55" class="cell" data-execution_count="3">
+<div id="2d05cfdf" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> Stocks():</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, ticker_name, price_inDolars, volume_inUnits, beta_float,</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>                 divDate_string, enterpriseValue_inDolars, price_inList):</span>
@@ -444,7 +445,7 @@
 <span id="cb3-25"><a href="#cb3-25" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__str__</span>(<span class="va">self</span>):</span>
 <span id="cb3-26"><a href="#cb3-26" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">"The stock "</span> <span class="op">+</span> <span class="bu">str</span>(<span class="va">self</span>.ticker) <span class="op">+</span> <span class="st">" has a last price of "</span> <span class="op">+</span> <span class="bu">str</span>(<span class="va">self</span>.price_last)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div id="575b7603" class="cell" data-execution_count="4">
+<div id="0a60d090" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>petr <span class="op">=</span> Stocks(ticker_name <span class="op">=</span> <span class="st">"PETR4.SA"</span>,</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>              price_inDolars <span class="op">=</span> <span class="fl">30.13</span>,</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>              volume_inUnits <span class="op">=</span> <span class="dv">93824145</span>,</span>
@@ -890,8 +891,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./1-intro_python.html" class="pagination-link" aria-label="1. Introdução">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">1. Introdução</span></span>
+      <a href="./1-intro_python.html" class="pagination-link" aria-label="Introdução ao Python">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introdução ao Python</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

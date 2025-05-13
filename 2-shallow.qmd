@@ -1,1 +1,3 @@
 # Shallow Learning
+
+Aqui, apresento as bibliotecas que são utilizadas para Shallow Learning, como o Scikit-Learn. Falarei sobre sua relação com Cuda.

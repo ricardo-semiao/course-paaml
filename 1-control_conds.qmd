@@ -1,6 +1,8 @@
 # Control Flow e Condições
 
-[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]
+Aqui, aprenderemos a controlar o fluxo de um programa, isto é, como fazer um programa tomar decisões e repetir operações. Aprenderemos também a lidar com erros e avisos.
+
+---
 
 
 ## If e Else

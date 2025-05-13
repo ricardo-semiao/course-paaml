@@ -1,1 +1,3 @@
 # Jango
+
+Explicação prática do framework Django + Jinja2.

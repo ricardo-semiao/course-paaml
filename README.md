@@ -1,65 +1,26 @@
-# Educational Materials on Python
+# Python: Automação, Apps, e Machine Learning
 
-Welcome! This is the repository with the educational materials for my own Python study. All that lives here is, majorly, authorial. The materials came from classes I gave for the trainees at GVCode, the data science and programming student organization from FGV-SP. The texts are in portuguese, with no current intention on translating them.
+Welcome! This book contains my studies on Python. My goal is to create a comprehensive material that explains how Python works and its essencial concepts in the context of Computer Science. It exists in the context of my other materials, each focusing, within its topic, on (i) explaining the most prominent theoretical concepts and demonstrating the use of the most useful tools for my _workflow_. It is written in Portuguese, and I will only translate it to English in the far future.
 
-Bem vindo! Este é o repositório com os materiais para o meu estudo da linguagem Python. Tudo aqui é, em sua maior parte, autoral. Os materiais originalmente vieram de aulas que dei para os trainees da GVCode, a entidade de programação e ciência de dados da FGV-SP.
+---
 
-Note alguns pontos importantes:
+Bem vindo(a)! Este livro contém meus estudos sobre Python. Meu objetivo era fazer um material abrangente, que explicasse como Python funciona e seus conceitos essenciais no contexto de Ciência da Computação. Ele existe no contexto dos meus outros materiais, cada um foca, dentro de seu tópico, em (i) explicar os conceitos teóricos mais presentes e demonstrar o uso das ferramentas  mais úteis para meu _workflow_:
 
-- Este material é um material de estudo pessoal, e nem sempre foi escrito em um estilo explicativo, nem com a preocupação de deixar boas práticas claras, e corrigir possíveis erros.
-- Este material está em construção e constante mudança.
+- "Ciência da Computação: Introdução e Aplicações" ([course-ccia](https://ricardo-semiao.github.io/course-ccia/)): conceitos básicos de ciência da computação, de maneira bem simplificada. Define a fundação para os outros livros, focados em linguagens/ferramentas específicas.
+- Linguagens de baixo nível, e outros tópicos (também course-ccia): conceitos básicos de linguagens de baixo nível, databases, controle de versão, para empoderar seu uso como acessórios em projetos.
+- "Julia: Performance e Ciência" (também course-ccia): Typing, multiple dispatch, e performance; programação científica.
+- "R: Fundamentos e Ciência de Dados" ([course-rfcd](https://ricardo-semiao.github.io/course-rfcd/)): metaprogramação e programação funcional; manipulação e visualização de dados.
+- "Python: Automação, Apps, e Machine Learning" (este livro): oop; automação, desenvolvimento de aplicações, e modelagem de machine learning.
+
+Atualmente, estou mais focado no material de Julia. Voltarei à este projeto em 2026, após finalizar meu mestrado.
+
+**Disclaimer:** este material é feito de maneira flexível, muitos conceitos são simplificados e imprecisos; este material é uma curadoria, releitura, e expansão de materiais já existentes, tento citar todos nas referências ao final do livro.
+
+**Disclaimer:** este material está em construção, em um momento completamente inicial.
+
+Para qualquer tipo de comentário, envie um email ([ricardo.semiao@outlook.com](mailto:ricardo.semiao@outlook.com)) ou abra uma [issue](https://github.com/ricardo-semiao/course-ccia/issues)/[discussion](https://github.com/ricardo-semiao/course-ccia/discussions) (o que for mais adequado).
 
 
-## Organização dos Materiais:
+## Construção
 
-1. **Introdução.**
-- História.
-- Características da Linguagem, e “Porque Python?”.
-- Literatura sobre Python.
-- Instalação, Interface, e Ferramentas.
-
-2. **Sintaxe e variáveis.**
-- Sintaxe.
-- Variáveis.
-- Operadores.
-
-3. **OOP.**
-
-4. **Tipos de dados e coleções.**
-- Tipos de escalares.
-- List, tuple, dict, set.
-- np.vectors e pd.dataframe.
-
-5. **Subsetting.**
-
-6. **Control flow e error handling.**
-- If else, while, for, keywords, list comp.
-- Error handling.
-
-7. **Funções.**
-- Sintaxe e argumentos.
-- Lambda.
-- *args e *kwargs*.
-- Ambientes e busca de valores.
-- Generators e operators.
-
-8. **Módulos importantes**
-- Funções base importantes.
-- Bibliotecas e módulos.
-
-9. **Numpy e pandas.**
-
-10. **Intro to DS and data manipulation.**
-- Com pandas.
-
-11. **Visualization.**
-- Com matplotlib and ggplot.
-
-12. **Modelling.**
-- Com sktlearn.
-
-13. **Web scrapping**
-
-14. **Outros tópicos.**
-- Guia de estilo e boas práticas.
-- Debugging com vscode.
+Esse livro é feito com Quarto, utilizando o meu tema customizado [rsquartobook](https://github.com/ricardo-semiao/ricardo-semiao/tree/main/themes/rsquartobook), disponível no meu repositório de temas e ferramentas [ricardo-semiao](https://github.com/ricardo-semiao/ricardo-semiao).

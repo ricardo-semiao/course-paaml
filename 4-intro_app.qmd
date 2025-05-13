@@ -1,1 +1,3 @@
 # Overview
+
+Introdução ao desenvolvimento de aplicações e software. Nâo só aplicações web, mas principalmente. Os frameworks/bibliotecas discutidas nos próximos capítulos ainda estão a definir. Este capítulo fará referência aos conhecimentos em CCIA.

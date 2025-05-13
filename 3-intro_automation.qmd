@@ -1,1 +1,3 @@
 # Overview
+
+O Python é uma linguagem muito útil por seu perfil generalista. Nesta parte apresentarei algumas das aplicações neste sentido, como web-scraping, file handling, entre outros (a definir).

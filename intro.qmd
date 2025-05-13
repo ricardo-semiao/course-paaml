@@ -3,36 +3,41 @@
 A organização deste livro é descrita abaixo.
 
 
-## Parte 1: Introdução à Linguagem
+## Parte 1: Introdução ao Python
 
-- Introdução ao Python
-- Programação Orientada a Objeto
-- Sintaxe e Variáveis
-- Tipos de Valores e Coleções
-- Control Flow e Condições
-- Subsetting
-- Funções e Ambientes
-- Outros Tópicos
+Aqui são apresentados os conceitos básicos da linguagem Python. Os capítulos são descritos abaixo:
+
+- Introdução ao Python: Breve história, características da linguagem, e motivos para utilizá-la.
+- Tipos de Valores e Coleções: Explicação sobre os tipos de dados e coleções disponíveis no Python.
+- Subsetting: Métodos para acessar e manipular coleções no Python.
+- Control Flow e Condições: Como controlar o fluxo de um programa com estruturas condicionais e loops.
+- Funções e Ambientes: Introdução à criação de funções e ao conceito de escopo e ambientes no Python.
 
 
 ## Parte 2: Machine Learning
 
-- Machine Learning Teórica
-- Manipulação e Visualização de Dados
-- Shallow Learning
-- Deep Learning
+Aqui são apresentados conceitos básicos e avançados de Machine Learning utilizando Python. Os capítulos são descritos abaixo:
+
+- Introdução ao Machine Learning: Conceitos fundamentais e visão geral do processo de modelagem.
+- Manipulação de Dados: Técnicas para trabalhar com matrizes e dataframes.
+- Shallow Learning: Introdução a modelos de aprendizado supervisionado e não supervisionado.
+- Deep Learning: Fundamentos de aprendizado profundo e redes neurais.
 
 
 ## Parte 3: Automação
 
-- Overview
-- Web Scrapping
-- Outros Tópicos
+Aqui são apresentados exemplos de automação de tarefas utilizando Python. Os capítulos são descritos abaixo:
+
+- Introdução à Automação: Visão geral sobre automação de tarefas com Python.
+- Web Scraping: Técnicas para extrair dados de páginas web.
+- Outros Tópicos: Aplicações diversas de automação com Python.
 
 
 ## Parte 4: Aplicações
 
-- Overview
-- Jango
-- Shiny
-- Outros
+Aqui são apresentados exemplos de desenvolvimento de aplicações utilizando Python. Os capítulos são descritos abaixo:
+
+- Introdução ao Desenvolvimento de Aplicações: Visão geral sobre o desenvolvimento de software com Python.
+- Django e Jinja: Introdução ao framework Django e ao uso de Jinja para templates.
+- Shiny para Python: Desenvolvimento de aplicações interativas com Shiny.
+- Outros Tópicos: Aplicações diversas utilizando Python.

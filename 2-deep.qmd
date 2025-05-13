@@ -1,1 +1,3 @@
 # Deep Learning
+
+Aqui, apresento as bibliotecas que são utilizadas para Deep Learning, como o TensorFlow, Keras, e PyTorch. Falarei sobre sua relação com Cuda.

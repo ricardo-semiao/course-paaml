@@ -1,1 +1,3 @@
 # Web Scrapping
+
+Aqui apresentarei os princípios de web scrapping, citando o conhecimento de HTML/CSS/JS presente no livro CCIA. Será feito tanto o scapign estático quanto dinâmico. As bibliotecas ainda estão a serem definidas, mas provavelmente serão o BeautifulSoup e o Selenium.

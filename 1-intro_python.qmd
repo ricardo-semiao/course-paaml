@@ -1,15 +1,8 @@
+# Introdução ao Python
+
+Seja bem vindo à introdução deste material sobre Python.
+
 ---
-title: 1. Introdução
-jupyter: python3
----
-
-
-Seja bem vindo à introdução deste material sobre Python. Note alguns pontos importantes:
-
-- Este material é um material de estudo pessoal, e nem sempre foi escrito em um estilo explicativo, nem com a preocupação de deixar boas práticas claras, e corrigir possíveis erros.
-- Este material está em construção e constante mudança.
-
-[Parte do material abaixo ainda é composto de referências, e não é 100% autoral, mas tudo teve pelo menos contribuições pessoais.]
 
 
 ## História
